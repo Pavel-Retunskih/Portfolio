@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 function NavPanel(){
     return(
-        <div>
+        <NavigationPanel>
             <NavButtons>
                 <li><a href="">Home</a></li>
                 <li><a href="">About</a></li>
@@ -10,12 +10,14 @@ function NavPanel(){
                 <li><a href="">Projects</a></li>
                 <li><a href="">Contact</a></li>
             </NavButtons>
-        </div>
+        </NavigationPanel>
     )
 }
 
 export default NavPanel;
+const NavigationPanel = styled.nav`
 
+`
 const NavButtons = styled.ul`
     display: flex;
     gap: 60px;

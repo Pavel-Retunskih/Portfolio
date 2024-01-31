@@ -1,11 +1,11 @@
 import './App.css';
 import styled from 'styled-components';
-import Header from './components/Header/Header';
-import Main from './components/Main/Main';
-import About from './components/About/About';
-import Skills from './components/Skills/Skills';
-import Projects from './components/Projects/Projects';
-import Contacts from './components/Contacts/Contacts';
+import Header from './layout/Header/Header';
+import Main from './layout/Main/Main';
+import About from './layout/About/About';
+import Skills from './layout/Skills/Skills';
+import Projects from './layout/Projects/Projects';
+import Contacts from './layout/Contacts/Contacts';
 
 
 function App() {
@@ -14,10 +14,10 @@ function App() {
             <Header />
             <div className='App-wrapper-content'>
                 <Main/>
-                <About/>
+                {/* <About/>
                 <Skills/>
                 <Projects/>
-                <Contacts/>
+                <Contacts/> */}
             </div>
 
         </div>

@@ -1,21 +1,23 @@
 import styled from "styled-components";
 import NavPanel from "./NavPanel/NavPanel";
 import SocialPanel from "./SocialPanel/SocialPanel";
+import { Logo } from "../../components/Logo/Logo";
 
 function Header(){
     return(
-        <HeaderWrapp>
-            <img src="" alt="Logo" />
+        <StyledHeader>
+            <Logo/>
             <NavPanel/>
             <SocialPanel/>
-        </HeaderWrapp>
+        </StyledHeader>
     )
 }
 
 export default Header;
 
 
-export const HeaderWrapp = styled.div`
+const StyledHeader = styled.header`
     display : flex;
     align-items : center;
+    background-color: #5cde7a;
 `
