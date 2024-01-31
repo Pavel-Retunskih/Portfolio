@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-function SocialPanel(){
+export function SocialPanel(){
     return(
         <div>
             <Socials>
@@ -11,8 +11,6 @@ function SocialPanel(){
         </div>
     )
 }
-
-export default SocialPanel;
 
 const Socials = styled.ul`
     display: flex;

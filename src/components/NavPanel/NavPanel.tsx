@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-function NavPanel(){
+export function NavPanel(){
     return(
         <NavigationPanel>
             <NavButtons>
@@ -14,7 +14,6 @@ function NavPanel(){
     )
 }
 
-export default NavPanel;
 const NavigationPanel = styled.nav`
 
 `
