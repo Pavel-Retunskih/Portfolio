@@ -1,12 +1,13 @@
 import styled from "styled-components";
+import { Icon } from "../Icon/Icon";
 
 export function SocialPanel(){
     return(
         <div>
             <Socials>
-                <li><a href="">GitHub</a></li>
-                <li><a href="">Twiter</a></li>
-                <li><a href="">LinkedIn</a></li>
+                <li><a href=""><Icon iconId = {'githubSocialIcon'}/></a></li>
+                <li><a href=""><Icon iconId = {'twitterSocialIcon'}/></a></li>
+                <li><a href=""><Icon iconId = {'linkedInSocialIcon'}/></a></li>
             </Socials>
         </div>
     )
