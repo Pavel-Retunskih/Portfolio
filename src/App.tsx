@@ -6,23 +6,36 @@ import About from './layout/About/About';
 import Skills from './layout/Skills/Skills';
 import Projects from './layout/Projects/Projects';
 import Contacts from './layout/Contacts/Contacts';
+import { Routes } from 'react-router-dom';
 
 
 function App() {
     return (
-        <div className="App-wrapper">
+        <AppWrapper>
             <Header />
-            <div className='App-wrapper-content'>
+
+            <Routes>
+            <AppWrapperContent>
                 <Main/>
                 {/* <About/>
                 <Skills/>
                 <Projects/>
                 <Contacts/> */}
-            </div>
-
-        </div>
+            </AppWrapperContent>
+            </Routes>
+            
+        </AppWrapper>
     );
 }
 
 export default App;
 
+const AppWrapper = styled.div`
+    margin: 0 auto;
+    margin-top: 70px;
+    width: 100%;
+    max-width: 1200px;
+`
+const AppWrapperContent = styled(AppWrapper)`
+    margin-top: 126px;
+`

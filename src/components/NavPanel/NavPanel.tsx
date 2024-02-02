@@ -1,23 +1,29 @@
 import styled from "styled-components";
+import { SocialPanel } from "../SocialPanel/SocialPanel";
+import {Link} from "react-router-dom"
 
 export function NavPanel(){
     return(
         <NavigationPanel>
             <NavButtons>
-                <li><a href="">Home</a></li>
-                <li><a href="">About</a></li>
-                <li><a href="">Tech Stack</a></li>
-                <li><a href="">Projects</a></li>
-                <li><a href="">Contact</a></li>
+                <li><Link to="/">Home</Link></li>
+                <li><Link to="/about">About</Link></li>
+                <li><Link to="/tech_stack">Tech Stack</Link></li>
+                <li><Link to="/projects">Projects</Link></li>
+                <li><Link to="/contacts">Contact</Link></li>
             </NavButtons>
+            <SocialPanel />
         </NavigationPanel>
     )
 }
 
 const NavigationPanel = styled.nav`
-
+    display: flex;
+    align-items: center;
+    gap: 51px;
 `
 const NavButtons = styled.ul`
+    padding-bottom: 25px;
     display: flex;
     gap: 60px;
     li {
