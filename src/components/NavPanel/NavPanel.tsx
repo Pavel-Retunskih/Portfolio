@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import { SocialPanel } from "../SocialPanel/SocialPanel";
-import {Link} from "react-router-dom"
+import { Link } from "react-router-dom";
 
 export function NavPanel(){
     return(
@@ -8,7 +8,7 @@ export function NavPanel(){
             <NavButtons>
                 <li><Link to="/">Home</Link></li>
                 <li><Link to="/about">About</Link></li>
-                <li><Link to="/tech_stack">Tech Stack</Link></li>
+                <li><Link to="/skills">Tech Stack</Link></li>
                 <li><Link to="/projects">Projects</Link></li>
                 <li><Link to="/contacts">Contact</Link></li>
             </NavButtons>
