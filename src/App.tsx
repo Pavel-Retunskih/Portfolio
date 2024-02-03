@@ -31,11 +31,13 @@ function App() {
 export default App;
 
 const AppWrapper = styled.div`
-    margin: 0 auto;
-    margin-top: 70px;
+margin: 0 auto;
+    padding: 70px 100px;
     width: 100%;
-    max-width: 1200px;
+    max-width: 1600px;
+    background-color: #F5F5F5;
 `
 const AppWrapperContent = styled(AppWrapper)`
     margin-top: 126px;
+    padding: 0;
 `

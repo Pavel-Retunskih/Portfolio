@@ -1,3 +1,4 @@
+import styled from "styled-components";
 import { Icon } from "../../components/Icon/Icon";
 
 function Skills(){
@@ -7,7 +8,7 @@ function Skills(){
                 <h2>My Tech Stack</h2>
                 <p> Technologies I've been working with recently</p>
             </div>
-            <div>
+            <IconSkillsWrapp>
                 <Icon height="120" width="120" viewBox="0 0 120 120" iconId="htmlIcon"/>
                 <Icon height="120" width="120" viewBox="0 0 120 120" iconId="cssIcon"/>
                 <Icon height="120" width="120" viewBox="0 0 120 120" iconId="jsIcon"/>
@@ -20,9 +21,16 @@ function Skills(){
                 <Icon height="120" width="120" viewBox="0 0 120 120" iconId="greensockIcon"/>
                 <Icon height="120" width="120" viewBox="0 0 120 120" iconId="vscodeIcon"/>
                 <Icon height="120" width="120" viewBox="0 0 120 120" iconId="githubIcon"/>
-            </div>
+            </IconSkillsWrapp>
         </div>
     )
 }
 
 export default Skills;
+
+const IconSkillsWrapp = styled.div`
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 100px;
+`

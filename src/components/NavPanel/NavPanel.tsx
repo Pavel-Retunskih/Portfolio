@@ -19,6 +19,7 @@ export function NavPanel(){
 
 const NavigationPanel = styled.nav`
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     gap: 51px;
 `

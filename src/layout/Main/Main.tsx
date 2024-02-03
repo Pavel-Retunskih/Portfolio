@@ -9,7 +9,7 @@ function Main(){
             Pavan MG<br/>
             I build things for web<br/>
             </MainTitle>
-            <MainImage src={`${photo}`} alt="" />
+            <MainImage src={`${photo}`} alt="Main Image" />
         </MainWrapp>
     )
 }
