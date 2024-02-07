@@ -19,6 +19,8 @@ const CardImages = [
 function Projects(){
     return(
         <ProjectsWrapp>
+            <h2>My Tech Stack</h2>
+            <p> Technologies I've been working with recently</p>
             {CardImages.map(({src})=><Card imgName = {src}/>)}
         </ProjectsWrapp>
     )
