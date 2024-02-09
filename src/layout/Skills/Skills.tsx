@@ -1,11 +1,12 @@
 import styled from "styled-components";
 import { Icon } from "../../components/Icon/Icon";
+import { SectionTitle } from "../../components/SectionTitle/SectionTitle";
 
 function Skills(){
     return(
         <div>
             <div>
-                <h2>My Tech Stack</h2>
+                <SectionTitle>My Tech Stack</SectionTitle>
                 <p> Technologies I've been working with recently</p>
             </div>
             <IconSkillsWrapp>

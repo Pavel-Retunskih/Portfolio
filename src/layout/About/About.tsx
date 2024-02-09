@@ -1,12 +1,14 @@
+import { SectionTitle } from "../../components/SectionTitle/SectionTitle";
+
 function About(){
     return(
         <div>
             <div>
-                <h2>About Me</h2>
+                <SectionTitle>About Me</SectionTitle>
                 <p>The Generator App is an online tool that helps you to export ready-made templates ready to work as your future website. It helps you to combine slides, panels and other components and export it as a set of static files: HTML/CSS/JS.</p>
             </div>
             <div>
-                <h2>Work Experience</h2>
+                <SectionTitle>Work Experience</SectionTitle>
                 <div>
                     <h3>Junior Web Developer</h3>
                     <span>Full Time</span>
@@ -22,7 +24,6 @@ function About(){
                     <span>Sep 2021 - Dec 2021</span>
                 </div>
                 <div>
-                    <h2>Work Experience</h2>
                     <h3>SEO / SEM Specialist</h3>
                     <span>Internship</span>
                     <span>HAAPS</span>
@@ -31,7 +32,7 @@ function About(){
                 </div>
             </div>
             <div>
-                <h2>Education</h2>
+                <SectionTitle>Education</SectionTitle>
                 <div>
                     <h3>Bachelor in Electronics & Communication</h3>
                     <span>Full Time</span>
