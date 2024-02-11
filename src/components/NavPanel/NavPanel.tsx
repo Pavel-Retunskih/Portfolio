@@ -24,13 +24,6 @@ const NavigationPanel = styled.nav`
     gap: 51px;
 `
 const NavButtons = styled.ul`
-    padding-bottom: 25px;
     display: flex;
     gap: 60px;
-    li {
-        list-style: none;
-        a{
-            text-decoration: none;
-        }
-    }
 `

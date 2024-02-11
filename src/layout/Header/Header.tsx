@@ -1,23 +1,23 @@
 import styled from "styled-components";
 import {NavPanel} from "../../components/NavPanel/NavPanel";
 import { Logo } from "../../components/Logo/Logo";
+import { Container } from "../../components/Container/Container";
+import { FlexWrapper } from "../../components/FlexWrapper/FlexWrapp";
 
-function Header(){
+export function Header(){
     return(
         <StyledHeader>
-            <Logo/>
-            <NavPanel/>
+            <Container>
+                <FlexWrapper justify={"space-between"} align={"center"}>
+                    <Logo/>
+                    <NavPanel/>
+                </FlexWrapper>
+            </Container>
         </StyledHeader>
     )
 }
 
-export default Header;
-
 
 const StyledHeader = styled.header`
-    margin: 0 auto;
-    display : flex;
-    flex-wrap: wrap;
-    align-items : center;
-    justify-content: space-between;
+    margin-top: 41px;
 `

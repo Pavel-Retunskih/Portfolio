@@ -1,20 +1,19 @@
 import './App.css';
 import styled from 'styled-components';
-import Header from './layout/Header/Header';
-import Main from './layout/Main/Main';
-import About from './layout/About/About';
-import Skills from './layout/Skills/Skills';
-import Projects from './layout/Projects/Projects';
-import Contacts from './layout/Contacts/Contacts';
+import {Header} from './layout/Header/Header';
+import {Main} from './layout/Main/Main';
+import {About} from './layout/About/About';
+import {Skills} from './layout/Skills/Skills';
+import {Projects} from './layout/Projects/Projects';
+import {Contacts} from './layout/Contacts/Contacts';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { Theme } from './components/GlobalStyles/Theme';
 
 
 function App() {
     return (
         <BrowserRouter>
-            <AppWrapper>
                 <Header />
-                    <AppWrapperContent>
                         <Routes>
                             <Route path = '/' element = {<Main />}/>
                             <Route path = '/about' element = {<About />}/>
@@ -22,8 +21,7 @@ function App() {
                             <Route path = '/projects' element = {<Projects />}/>
                             <Route path = '/contacts' element = {<Contacts />}/>
                         </Routes>
-                    </AppWrapperContent>
-            </AppWrapper>
+
         </BrowserRouter>
     );
 }
@@ -35,7 +33,7 @@ margin: 0 auto;
     padding: 70px 100px;
     width: 100%;
     max-width: 1600px;
-    background-color: #F5F5F5;
+    background-color: ${Theme.colors.primaryBg};
 `
 const AppWrapperContent = styled(AppWrapper)`
     margin-top: 126px;

@@ -1,15 +1,16 @@
 import styled from "styled-components";
 import { Icon } from "../../components/Icon/Icon";
 import { SectionTitle } from "../../components/SectionTitle/SectionTitle";
+import { FlexWrapper } from "../../components/FlexWrapper/FlexWrapp";
 
-function Skills(){
+export function Skills(){
     return(
-        <div>
+        <section>
             <div>
                 <SectionTitle>My Tech Stack</SectionTitle>
-                <p> Technologies I've been working with recently</p>
+                <h3> Technologies I've been working with recently</h3>
             </div>
-            <IconSkillsWrapp>
+            <FlexWrapper wrap={"wrap"} justify={"space-between"} gap={"100px"}>
                 <Icon height="120" width="120" viewBox="0 0 120 120" iconId="htmlIcon"/>
                 <Icon height="120" width="120" viewBox="0 0 120 120" iconId="cssIcon"/>
                 <Icon height="120" width="120" viewBox="0 0 120 120" iconId="jsIcon"/>
@@ -22,16 +23,7 @@ function Skills(){
                 <Icon height="120" width="120" viewBox="0 0 120 120" iconId="greensockIcon"/>
                 <Icon height="120" width="120" viewBox="0 0 120 120" iconId="vscodeIcon"/>
                 <Icon height="120" width="120" viewBox="0 0 120 120" iconId="githubIcon"/>
-            </IconSkillsWrapp>
-        </div>
+            </FlexWrapper>
+        </section>
     )
 }
-
-export default Skills;
-
-const IconSkillsWrapp = styled.div`
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 100px;
-`

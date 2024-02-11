@@ -12,13 +12,6 @@ export function SocialPanel(){
 }
 
 const Socials = styled.ul`
-     padding-bottom: 23px;
     display: flex;
     gap: 20px;
-    li{
-        list-style: none;
-        a{
-            text-decoration: none;
-        }
-    }
 `

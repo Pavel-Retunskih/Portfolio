@@ -6,12 +6,12 @@ import { SectionTitle } from "../../components/SectionTitle/SectionTitle";
 
 
 
-function Projects(){
+export function Projects(){
     return(
         <ProjectsWrapp>
             <FlexWrapper>
             <SectionTitle>My Tech Stack</SectionTitle>
-            <p> Technologies I've been working with recently</p>
+            <h3> Technologies I've been working with recently</h3>
             </FlexWrapper>
             <FlexWrapper wrap={"wrap"} gap= {"34px"} justify={"space-between"} align={"center"}>
                 {Cards.map(({src, title, subtitle, stack})=><Card 
@@ -24,8 +24,6 @@ function Projects(){
         </ProjectsWrapp>
     )
 }
-
-export default Projects;
 
 const ProjectsWrapp = styled.section`
     display: flex;

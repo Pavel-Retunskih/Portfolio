@@ -1,8 +1,8 @@
 import { Icon } from "../../components/Icon/Icon";
 
-function Contacts(){
+export function Contacts(){
     return(
-        <div>
+        <section>
             <h2>For any questions please mail me:</h2>
             <span>hi@pavanmg.in</span>
             <footer>
@@ -33,9 +33,7 @@ function Contacts(){
                     </div>
                 </div>
             </footer>
-        </div>
+        </section>
        
     )
 }
-
-export default Contacts;
