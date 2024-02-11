@@ -21,7 +21,7 @@ export function Main(){
 }
 
 const MainWrapp = styled.section`
-
+margin-top: 210px;
 `
 const MainTitle = styled.h1`
     font-family: Poppins;
