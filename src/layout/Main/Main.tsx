@@ -2,6 +2,7 @@ import styled from "styled-components";
 import photo from "../../assets/images/Photo.jpg"
 import { FlexWrapper } from "../../components/FlexWrapper/FlexWrapp";
 import { Container } from "../../components/Container/Container";
+import { GradientText } from "../../components/GradientText/GradientText";
 export function Main(){
     return(
         <MainWrapp>
@@ -10,7 +11,7 @@ export function Main(){
                     <MainTitle>
                         Hi 👋,<br/>
                         My name is<br/>
-                        Pavan MG<br/>
+                        <GradientText font= {"Poppins"}>Pavan MG</GradientText><br/>
                         I build things for web<br/>
                     </MainTitle>
                     <MainImage src={`${photo}`} alt="Main Image" />
@@ -29,6 +30,7 @@ const MainTitle = styled.h1`
     font-weight: 700;
     line-height: 70px;
     text-align: left;
+    color: #D9D9D9;
 `
 const MainImage = styled.img`
     width: 349px;
