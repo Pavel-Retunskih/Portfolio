@@ -23,7 +23,7 @@ const NavigationPanel = styled.nav`
     align-items: center;
     gap: 51px;
 `
-const NavButtons = styled.ul`
+export const NavButtons = styled.ul`
     display: flex;
     gap: 60px;
 `

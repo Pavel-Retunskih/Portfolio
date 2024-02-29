@@ -11,7 +11,6 @@ export const GradientText = styled.span<GradientTextTypeProps>`
     -webkit-background-clip:text;
     -webkit-text-fill-color:transparent;
     background-clip:text;
-    text-fill-color:transparent;
     font-family: ${props => props.font || "DM Sans"};
     font-size: ${props => props.size || "58px"};
     font-weight: 700;

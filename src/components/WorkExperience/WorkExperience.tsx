@@ -80,7 +80,7 @@ const CompanyName = styled.p`
     line-height: 28px;
 `
 const Town = styled(CompanyName)`
-    
+
 `
 
 const WorkigPeriod = styled(CompanyName)`
