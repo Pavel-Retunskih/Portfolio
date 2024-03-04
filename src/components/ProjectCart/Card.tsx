@@ -49,8 +49,8 @@ export function Card(props:CardStyledPropsType){
                 <Text>{props.cardDescription}</Text>
                 <Stack>{`Tech stack : ${props.cardStackDescription}`}</Stack>
                 <FlexWrapper justify={"space-between"}>
-                    <a href="#">Live Preview</a>
-                    <a href="#">View Code</a>
+                    <CardLink href="#">Live Preview</CardLink>
+                    <CardLink href="#">View Code</CardLink>
                 </FlexWrapper>
             </Description>
         </CardWrapper>
@@ -92,4 +92,17 @@ const Text = styled.p`
 const Stack = styled(Text)`
     font-size: 14px;
     margin: 12px 0 21px 0;
+`
+const CardLink = styled.a`
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    text-decoration-line: underline;
+        &::before{
+            display: flex;
+            width: 20px;
+            height: 20px;
+            background-image: url();
+        }
 `

@@ -36,6 +36,7 @@ export function About(){
                         )}
                     </FlexWrapper>
                     <ImageBox>
+                        
                     </ImageBox>
                 </FlexWrapper>
             </Container>

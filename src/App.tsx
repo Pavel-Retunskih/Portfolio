@@ -6,7 +6,7 @@ import {About} from './layout/About/About';
 import {Skills} from './layout/Skills/Skills';
 import {Projects} from './layout/Projects/Projects';
 import {Contacts} from './layout/Contacts/Contacts';
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { BrowserRouter, Route, Routes, createBrowserRouter } from 'react-router-dom';
 import { Theme } from './components/GlobalStyles/Theme';
 
 
@@ -21,7 +21,6 @@ function App() {
                             <Route path = '/projects' element = {<Projects />}/>
                             <Route path = '/contacts' element = {<Contacts />}/>
                         </Routes>
-
         </BrowserRouter>
     );
 }

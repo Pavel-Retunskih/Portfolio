@@ -30,7 +30,7 @@ export function Footer(){
                             <li><Link to="/contacts">Contact</Link></li>
                         </NavButtons>
                 </FlexWrapper>
-                    <p>Designed and built by <GradientText>Pavan MG</GradientText> with <GradientText>Love</GradientText> & <GradientText>Coffee</GradientText></p>
+                    <p>Designed and built by <GradientText size={"18px"}>Pavan MG</GradientText> with <GradientText size={"18px"}>Love</GradientText> & <GradientText size={"18px"}>Coffee</GradientText></p>
             </FlexWrapper>
         </FooterContainer>
     )

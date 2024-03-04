@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import photo from "../../assets/images/Photo.jpg"
+import abstract from "../../assets/images/Abstract.png"
 import { FlexWrapper } from "../../components/FlexWrapper/FlexWrapp";
 import { Container } from "../../components/Container/Container";
 import { GradientText } from "../../components/GradientText/GradientText";
@@ -14,7 +15,11 @@ export function Main(){
                         <GradientText font= {"Poppins"}>Pavan MG</GradientText><br/>
                         I build things for web<br/>
                     </MainTitle>
-                    <MainImage src={`${photo}`} alt="Main Image" />
+                    <MainImageContainer>
+                        <MainImage src={`${photo}`} alt="Main Image" />
+                        <AbstractImage src = {`${abstract}`}/>
+                    </MainImageContainer>    
+                    
                 </FlexWrapper>
             </Container>
         </MainWrapp>
@@ -36,5 +41,14 @@ const MainImage = styled.img`
     width: 349px;
     height: 349px;
     border-radius: 230px;
-
+`
+const AbstractImage = styled.img`
+    position: absolute;
+    top: -150px;
+    left: -150px;
+    width: 627px;
+    height: 627px;
+`
+const MainImageContainer = styled.div`
+    position: relative;
 `
