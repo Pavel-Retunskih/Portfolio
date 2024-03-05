@@ -36,7 +36,7 @@ export function About(){
                         )}
                     </FlexWrapper>
                     <ImageBox>
-                        
+                        <AboutImg src = {brickWallImg}/>
                     </ImageBox>
                 </FlexWrapper>
             </Container>
@@ -54,6 +54,10 @@ const Text = styled.p`
 `
 
 const ImageBox = styled.div`
-width: 590px;
+    width: 1330px;
+    position: relative;
 `
-
+const AboutImg = styled.img`
+    position: absolute;
+    top: -45px;
+`

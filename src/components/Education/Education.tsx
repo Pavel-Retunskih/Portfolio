@@ -33,7 +33,7 @@ export function Education(props : EducationPropsType){
 const EducationBox = styled.div`
     min-height: 75px;
     border-bottom: 2px solid grey;
-    margin-bottom: 35px;
+    margin-bottom: 300px;
     padding-bottom: 20px;
     & span{
         display: flex;
@@ -65,5 +65,4 @@ const University = styled.p`
 
 
 const EducationPeriod = styled(University)`
-    
 `

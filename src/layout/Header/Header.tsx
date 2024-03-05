@@ -19,5 +19,5 @@ export function Header(){
 
 
 const StyledHeader = styled.header`
-    margin-top: 41px;
+    margin-top: 75px;
 `

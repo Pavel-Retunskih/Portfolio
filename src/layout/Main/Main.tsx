@@ -27,28 +27,32 @@ export function Main(){
 }
 
 const MainWrapp = styled.section`
-margin-top: 210px;
+    margin-top: 260px;
+    margin-bottom: 291px;
 `
 const MainTitle = styled.h1`
     font-family: Poppins;
+    letter-spacing: -1px;
     font-size: 58px;
     font-weight: 700;
     line-height: 70px;
     text-align: left;
+    padding-top: 20px;
     color: #D9D9D9;
 `
 const MainImage = styled.img`
-    width: 349px;
-    height: 349px;
+    max-width: 349px;
+    max-height: 349px;
     border-radius: 230px;
 `
 const AbstractImage = styled.img`
     position: absolute;
-    top: -150px;
-    left: -150px;
+    top: -160px;
+    left: -140px;
     width: 627px;
     height: 627px;
 `
 const MainImageContainer = styled.div`
     position: relative;
+    margin-right: 21px;
 `

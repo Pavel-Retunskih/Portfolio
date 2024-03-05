@@ -20,10 +20,14 @@ export function NavPanel(){
 const NavigationPanel = styled.nav`
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
-    gap: 51px;
+    align-items: flex-start;
+    gap: 60px;
 `
 export const NavButtons = styled.ul`
+    color: rgb(102, 102, 102);
+    font-family: DM Sans;
+    font-size: 20px;
+    font-weight: 500;
     display: flex;
     gap: 60px;
 `
