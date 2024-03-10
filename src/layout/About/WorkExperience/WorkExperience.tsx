@@ -1,5 +1,5 @@
 import styled from "styled-components"
-import { FlexWrapper } from "../FlexWrapper/FlexWrapp"
+import { FlexWrapper } from "../../../components/FlexWrapper/FlexWrapp"
 
 export const experience = [
     {position: "Junior Web Developer",

@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import {NavPanel} from "../../components/NavPanel/NavPanel";
+import {NavPanel} from "./NavPanel/NavPanel";
 import { Logo } from "../../components/Logo/Logo";
 import { Container } from "../../components/Container/Container";
 import { FlexWrapper } from "../../components/FlexWrapper/FlexWrapp";

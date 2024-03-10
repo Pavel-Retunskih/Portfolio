@@ -1,5 +1,5 @@
 import { FlexWrapper } from "../../components/FlexWrapper/FlexWrapp";
-import { Card, Cards } from "../../components/ProjectCart/Card";
+import { Card, Cards } from "./ProjectCart/Card";
 
 import styled from "styled-components";
 import { SectionTitle } from "../../components/SectionTitle/SectionTitle";

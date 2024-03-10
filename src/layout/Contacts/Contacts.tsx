@@ -3,7 +3,7 @@ import { Container } from "../../components/Container/Container";
 import { Section } from "../../components/Section/Section";
 import { SectionTitle } from "../../components/SectionTitle/SectionTitle";
 import { FlexWrapper } from "../../components/FlexWrapper/FlexWrapp";
-import { Footer } from "../../components/Footer/Footer";
+import { Footer } from "./Footer/Footer";
 import { GradientText } from "../../components/GradientText/GradientText";
 export function Contacts(){
     return(

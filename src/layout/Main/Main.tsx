@@ -4,6 +4,11 @@ import abstract from "../../assets/images/Abstract.png"
 import { FlexWrapper } from "../../components/FlexWrapper/FlexWrapp";
 import { Container } from "../../components/Container/Container";
 import { GradientText } from "../../components/GradientText/GradientText";
+
+
+
+
+
 export function Main(){
     return(
         <MainWrapp>

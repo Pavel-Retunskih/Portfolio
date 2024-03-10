@@ -1,11 +1,11 @@
 import styled from "styled-components";
 import { Container } from "../../components/Container/Container";
-import { Education } from "../../components/Education/Education";
-import { educationData } from "../../components/Education/Education";
+import { Education } from "./Education/Education";
+import { educationData } from "./Education/Education";
 import { Section } from "../../components/Section/Section";
 import { SectionTitle } from "../../components/SectionTitle/SectionTitle";
-import { WorkExperince } from "../../components/WorkExperience/WorkExperience";
-import {experience} from "../../components/WorkExperience/WorkExperience"
+import { WorkExperince } from "./WorkExperience/WorkExperience";
+import {experience} from "./WorkExperience/WorkExperience"
 import { FlexWrapper } from "../../components/FlexWrapper/FlexWrapp";
 import brickWallImg from "../../assets/images/brickwall.png"
 

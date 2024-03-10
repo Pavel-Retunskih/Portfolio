@@ -1,6 +1,7 @@
 import styled from "styled-components";
-import { SocialPanel } from "../SocialPanel/SocialPanel";
+import { SocialPanel } from "../../../components/SocialPanel/SocialPanel";
 import { Link } from "react-router-dom";
+import { Theme } from "../../../components/GlobalStyles/Theme";
 
 export function NavPanel(){
     return(
@@ -22,6 +23,9 @@ const NavigationPanel = styled.nav`
     flex-wrap: wrap;
     align-items: flex-start;
     gap: 60px;
+    @media ${Theme.media.tablet}{
+        display: none;
+    }
 `
 export const NavButtons = styled.ul`
     color: rgb(102, 102, 102);

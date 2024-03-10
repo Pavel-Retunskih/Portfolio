@@ -1,10 +1,10 @@
 import styled from "styled-components";
-import { Icon } from "../Icon/Icon";
+import { Icon } from "../../../components/Icon/Icon";
 import { Link } from "react-router-dom";
-import logo_grey  from "../../assets/images/logo_grey.png";
-import { FlexWrapper } from "../FlexWrapper/FlexWrapp";
-import { NavButtons } from "../NavPanel/NavPanel";
-import { GradientText } from "../GradientText/GradientText";
+import logo_grey  from "../../../assets/images/logo_grey.png";
+import { FlexWrapper } from "../../../components/FlexWrapper/FlexWrapp";
+import { NavButtons } from "../../Header/NavPanel/NavPanel";
+import { GradientText } from "../../../components/GradientText/GradientText";
 export function Footer(){
     return(
         <FooterContainer>
