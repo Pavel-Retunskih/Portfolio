@@ -7,10 +7,10 @@ import { Icon } from "../../../components/Icon/Icon";
 export function MobileNavigationMenu(){
     return(
         <MobileNavigationPanel>
-            <BurgerButton isOpen ={true}>
+            <BurgerButton isOpen ={false}>
                 <span></span>
             </BurgerButton>
-            <MobileMenuPopup isOpen ={true}>
+            <MobileMenuPopup isOpen ={false}>
                 <ul>
                     <li><Link to="/">Home</Link></li>
                     <li><Link to="/about">About</Link></li>
@@ -47,7 +47,7 @@ const BurgerButton = styled.button<{isOpen: boolean}>`
     height: 36px;
     position: fixed;
     width: 200px;
-    height: 200px;
+    height: 240px;
     top: -100px;
     right: -100px;
     span{
