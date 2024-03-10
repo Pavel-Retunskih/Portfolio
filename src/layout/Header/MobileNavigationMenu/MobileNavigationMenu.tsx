@@ -45,12 +45,19 @@ const BurgerButton = styled.button<{isOpen: boolean}>`
     background-color: rgba(164, 46, 46, 0);
     width: 36px;
     height: 36px;
+    position: fixed;
+    width: 200px;
+    height: 200px;
+    top: -100px;
+    right: -100px;
     span{
         display: block;
         width: 36px;
         height: 2px;
         background-color: ${Theme.colors.navButtonsColor};
         position: absolute;
+        bottom: 40px;
+        left: 50px;
 
         ${props => props.isOpen && css<{isOpen : boolean}>`
             background-color: rgba(255, 255, 255, 0);
