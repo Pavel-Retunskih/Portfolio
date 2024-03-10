@@ -19,7 +19,3 @@ export function Contacts(){
        
     )
 }
-
-const Email = styled.span`
-    
-`
