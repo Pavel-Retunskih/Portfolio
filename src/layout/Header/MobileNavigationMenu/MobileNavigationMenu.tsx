@@ -50,6 +50,10 @@ const BurgerButton = styled.button<{isOpen: boolean}>`
     height: 240px;
     top: -100px;
     right: -100px;
+    @media ${Theme.media.mobile} {
+        top: -165px;
+        right: -100px;
+    }
     span{
         display: block;
         width: 36px;
