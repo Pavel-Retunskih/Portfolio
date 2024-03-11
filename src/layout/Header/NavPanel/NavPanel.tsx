@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { SocialPanel } from "../../../components/SocialPanel/SocialPanel";
 import { Link } from "react-router-dom";
-import { Theme } from "../../../components/GlobalStyles/Theme";
+import { Theme } from "../../../styles/Theme";
 
 export function NavPanel(){
     return(

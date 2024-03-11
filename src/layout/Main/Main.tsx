@@ -4,6 +4,9 @@ import abstract from "../../assets/images/Abstract.png"
 import { FlexWrapper } from "../../components/FlexWrapper/FlexWrapp";
 import { Container } from "../../components/Container/Container";
 import { GradientText } from "../../components/GradientText/GradientText";
+import { Section } from "../../components/Section/Section";
+import { Theme } from "../../styles/Theme";
+import { font } from "../../styles/Common";
 
 
 
@@ -11,7 +14,7 @@ import { GradientText } from "../../components/GradientText/GradientText";
 
 export function Main(){
     return(
-        <MainWrapp>
+        <Section margintop="200px" overflow="visible">
             <Container>
                 <FlexWrapper align={"center"} justify={"space-between"} wrap={"wrap"}>
                     <MainTitle>
@@ -20,44 +23,56 @@ export function Main(){
                         <GradientText font= {"Poppins"}>Pavan MG</GradientText><br/>
                         I build things for web<br/>
                     </MainTitle>
-                    <MainImageContainer>
+                    <MainImageWrapper>
                         <MainImage src={`${photo}`} alt="Main Image" />
-                        <AbstractImage src = {`${abstract}`}/>
-                    </MainImageContainer>    
-                    
+                    </MainImageWrapper>
                 </FlexWrapper>
             </Container>
-        </MainWrapp>
+        </Section>
     )
 }
 
-const MainWrapp = styled.section`
-    margin-top: 260px;
-    margin-bottom: 291px;
-`
 const MainTitle = styled.h1`
-    font-family: Poppins;
+    ${font({family:"Poppins", weight:700, lineHeight: "70px", Fmax:58, Fmin:36})};
     letter-spacing: -1px;
-    font-size: 58px;
-    font-weight: 700;
-    line-height: 70px;
-    text-align: left;
     padding-top: 20px;
-    color: #D9D9D9;
+    text-align: left;
+    color:#D9D9D9;
 `
 const MainImage = styled.img`
-    max-width: 349px;
-    max-height: 349px;
+    width: 349px;
+    height: 349px;
     border-radius: 230px;
+    @media ${Theme.media.mobile} {
+        width: 200px;
+        height: 200px;
+    }
 `
-const AbstractImage = styled.img`
-    position: absolute;
-    top: -160px;
-    left: -140px;
-    width: 627px;
-    height: 627px;
-`
-const MainImageContainer = styled.div`
+const MainImageWrapper = styled.div`
     position: relative;
+    overflow: visible;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin-right: 21px;
+    @media ${Theme.media.mobile} {
+        width: 300px;
+        height: 300px;
+        margin-top: 10px;
+        margin-right: 0;
+    }
+
+    &::before{
+        content: "";
+        display: block;
+        position: absolute;
+        height: 627px;
+        width: 627px;
+        background-image: url(${abstract});
+        background-size:cover;
+        @media ${Theme.media.mobile} {
+        width: 350px;
+        height: 350px;
+    }
+    }
 `

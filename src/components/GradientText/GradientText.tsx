@@ -15,5 +15,4 @@ export const GradientText = styled.span<GradientTextTypeProps>`
     font-size: ${props => props.size || "58px"};
     font-weight: 700;
     line-height: 70px;
-    margin: 9px 0 300px 0;
 `

@@ -1,6 +1,6 @@
 import styled, { css } from "styled-components";
 import { Link } from "react-router-dom";
-import { Theme } from "../../../components/GlobalStyles/Theme";
+import { Theme } from "../../../styles/Theme";
 import { Icon } from "../../../components/Icon/Icon";
 
 
