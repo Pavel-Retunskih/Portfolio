@@ -13,4 +13,5 @@ export const SectionTitle = styled.h2<SectionTitlePropsType>`
     font-weight: ${props => props.weight || 700};
     line-height: ${props => props.lineHeight || "26px"};
     margin-bottom: ${props => props.marginBottom || "38px"};
+    line-height: 1;
 `

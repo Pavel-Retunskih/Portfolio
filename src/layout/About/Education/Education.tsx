@@ -54,6 +54,7 @@ const Speciality = styled.h3`
     font-weight: 400;
     line-height: 28px;
     letter-spacing: 1px;
+    max-width: 175px;
 `
 const University = styled.p`
     color: rgb(167, 167, 167);
