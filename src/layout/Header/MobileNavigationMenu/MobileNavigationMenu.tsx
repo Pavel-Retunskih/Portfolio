@@ -2,21 +2,26 @@ import styled, { css } from "styled-components";
 import { Link } from "react-router-dom";
 import { Theme } from "../../../styles/Theme";
 import { Icon } from "../../../components/Icon/Icon";
+import { useState } from "react";
 
 
 export function MobileNavigationMenu(){
+    const[open, setOpen] = useState(false)
+    function handleChange(){
+        setOpen(!open)
+    }
     return(
         <MobileNavigationPanel>
-            <BurgerButton isOpen ={false}>
+            <BurgerButton isOpen ={open} onClick={handleChange}>
                 <span></span>
             </BurgerButton>
-            <MobileMenuPopup isOpen ={false}>
+            <MobileMenuPopup isOpen ={open}>
                 <ul>
-                    <li><Link to="/">Home</Link></li>
-                    <li><Link to="/about">About</Link></li>
-                    <li><Link to="/skills">Tech Stack</Link></li>
-                    <li><Link to="/projects">Projects</Link></li>
-                    <li><Link to="/contacts">Contact</Link></li>
+                    <li onClick={handleChange}><Link to="/">Home</Link></li>
+                    <li onClick={handleChange}><Link to="/about">About</Link></li>
+                    <li onClick={handleChange}><Link to="/skills">Tech Stack</Link></li>
+                    <li onClick={handleChange}><Link to="/projects">Projects</Link></li>
+                    <li onClick={handleChange}><Link to="/contacts">Contact</Link></li>
                     <ul>
                         <li><a href="#"><Icon height="30" width="30" viewBox="0 0 30 30" iconId = {'githubSocialIcon'}/></a></li>
                         <li><a href="#"><Icon height="30" width="30" viewBox="2 2 30 30" iconId = {'twitterSocialIcon'}/></a></li>
@@ -24,10 +29,10 @@ export function MobileNavigationMenu(){
                     </ul>
                 </ul>
             </MobileMenuPopup>
-            
         </MobileNavigationPanel>
     )
 }
+
 
 const MobileNavigationPanel = styled.nav`
     display: flex;
@@ -62,6 +67,7 @@ const BurgerButton = styled.button<{isOpen: boolean}>`
         position: absolute;
         bottom: 40px;
         left: 50px;
+        transition:0.5s;
 
         ${props => props.isOpen && css<{isOpen : boolean}>`
             background-color: rgba(255, 255, 255, 0);
