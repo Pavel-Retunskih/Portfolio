@@ -7,7 +7,7 @@ export function NavPanel(){
     return(
         <NavigationPanel>
             <NavButtons>
-                <li><Link to="/Portfolio/home">Home</Link></li>
+                <li><Link to="/Portfolio/">Home</Link></li>
                 <li><Link to="/Portfolio/about">About</Link></li>
                 <li><Link to="/Portfolio/skills">Tech Stack</Link></li>
                 <li><Link to="/Portfolio/projects">Projects</Link></li>

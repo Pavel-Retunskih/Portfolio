@@ -17,7 +17,7 @@ export function MobileNavigationMenu(){
             </BurgerButton>
             <MobileMenuPopup isOpen ={open}>
                 <ul>
-                    <li onClick={handleChange}><Link to="/Portfolio/home">Home</Link></li>
+                    <li onClick={handleChange}><Link to="/Portfolio/">Home</Link></li>
                     <li onClick={handleChange}><Link to="/Portfolio/about">About</Link></li>
                     <li onClick={handleChange}><Link to="/Portfolio/skills">Tech Stack</Link></li>
                     <li onClick={handleChange}><Link to="/Portfolio/projects">Projects</Link></li>

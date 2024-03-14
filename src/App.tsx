@@ -14,7 +14,7 @@ function App() {
         <BrowserRouter>
             <Header />
                 <Routes>
-                    <Route path = '/Portfolio/home' element = {<Main />}/>
+                    <Route path = '/Portfolio/' element = {<Main />}/>
                     <Route path = '/Portfolio/about' element = {<About />}/>
                     <Route path = '/Portfolio/skills' element = {<Skills />}/>
                     <Route path = '/Portfolio/projects' element = {<Projects />}/>

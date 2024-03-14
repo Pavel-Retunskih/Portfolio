@@ -23,7 +23,7 @@ export function Footer(){
             <FlexWrapper align={"center"} justify={"space-between"}>
                 <FlexWrapper align={"center"} justify={"space-between"}>
                         <NavButtons>
-                            <li><Link to ="/Portfolio/home">Home</Link></li>
+                            <li><Link to ="/Portfolio/">Home</Link></li>
                             <li><Link to = "/Portfolio/about">About</Link></li>
                             <li><Link to="/Portfolio/skills">Technologies</Link></li>
                             <li><Link to="/Portfolio/projects">Projects</Link></li>
