@@ -23,11 +23,11 @@ export function Footer(){
             <FlexWrapper align={"center"} justify={"space-between"}>
                 <FlexWrapper align={"center"} justify={"space-between"}>
                         <NavButtons>
-                            <li><Link to ="/">Home</Link></li>
-                            <li><Link to = "/about">About</Link></li>
-                            <li><Link to="/skills">Technologies</Link></li>
-                            <li><Link to="/projects">Projects</Link></li>
-                            <li><Link to="/contacts">Contact</Link></li>
+                            <li><Link to ="/Portfolio/home">Home</Link></li>
+                            <li><Link to = "/Portfolio/about">About</Link></li>
+                            <li><Link to="/Portfolio/skills">Technologies</Link></li>
+                            <li><Link to="/Portfolio/projects">Projects</Link></li>
+                            <li><Link to="/Portfolio/contacts">Contact</Link></li>
                         </NavButtons>
                 </FlexWrapper>
                     <p>Designed and built by <GradientText size={"18px"}>Pavan MG</GradientText> with <GradientText size={"18px"}>Love</GradientText> & <GradientText size={"18px"}>Coffee</GradientText></p>

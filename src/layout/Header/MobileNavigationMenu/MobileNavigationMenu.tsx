@@ -17,11 +17,11 @@ export function MobileNavigationMenu(){
             </BurgerButton>
             <MobileMenuPopup isOpen ={open}>
                 <ul>
-                    <li onClick={handleChange}><Link to="/">Home</Link></li>
-                    <li onClick={handleChange}><Link to="/about">About</Link></li>
-                    <li onClick={handleChange}><Link to="/skills">Tech Stack</Link></li>
-                    <li onClick={handleChange}><Link to="/projects">Projects</Link></li>
-                    <li onClick={handleChange}><Link to="/contacts">Contact</Link></li>
+                    <li onClick={handleChange}><Link to="/Portfolio/home">Home</Link></li>
+                    <li onClick={handleChange}><Link to="/Portfolio/about">About</Link></li>
+                    <li onClick={handleChange}><Link to="/Portfolio/skills">Tech Stack</Link></li>
+                    <li onClick={handleChange}><Link to="/Portfolio/projects">Projects</Link></li>
+                    <li onClick={handleChange}><Link to="/Portfolio/contacts">Contact</Link></li>
                     <ul>
                         <li><a href="#"><Icon height="30" width="30" viewBox="0 0 30 30" iconId = {'githubSocialIcon'}/></a></li>
                         <li><a href="#"><Icon height="30" width="30" viewBox="2 2 30 30" iconId = {'twitterSocialIcon'}/></a></li>
@@ -67,8 +67,6 @@ const BurgerButton = styled.button<{isOpen: boolean}>`
         position: absolute;
         bottom: 40px;
         left: 50px;
-        transition:0.5s;
-
         ${props => props.isOpen && css<{isOpen : boolean}>`
             background-color: rgba(255, 255, 255, 0);
         `}
@@ -81,8 +79,10 @@ const BurgerButton = styled.button<{isOpen: boolean}>`
             background-color: ${Theme.colors.navButtonsColor};
             position: absolute;
             transform: translateY(-10px);
+            transition:0.5s;
             ${props => props.isOpen && css<{isOpen : boolean}>`
                 transform: translateY(0) rotate(-45deg);
+                transition:0.5s;
             `}
         }
         
@@ -94,8 +94,10 @@ const BurgerButton = styled.button<{isOpen: boolean}>`
             background-color: ${Theme.colors.navButtonsColor};
             position: absolute;
             transform: translateY(10px);
+            transition:0.5s;
             ${props => props.isOpen && css<{isOpen : boolean}>`
                 transform: translateY(0) rotate(45deg);
+                transition:0.5s;
             `}
         }
     }

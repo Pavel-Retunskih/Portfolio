@@ -7,11 +7,11 @@ export function NavPanel(){
     return(
         <NavigationPanel>
             <NavButtons>
-                <li><Link to="/">Home</Link></li>
-                <li><Link to="/about">About</Link></li>
-                <li><Link to="/skills">Tech Stack</Link></li>
-                <li><Link to="/projects">Projects</Link></li>
-                <li><Link to="/contacts">Contact</Link></li>
+                <li><Link to="/Portfolio/">Home</Link></li>
+                <li><Link to="/Portfolio/about">About</Link></li>
+                <li><Link to="/Portfolio/skills">Tech Stack</Link></li>
+                <li><Link to="/Portfolio/projects">Projects</Link></li>
+                <li><Link to="/Portfolio/contacts">Contact</Link></li>
             </NavButtons>
             <SocialPanel />
         </NavigationPanel>

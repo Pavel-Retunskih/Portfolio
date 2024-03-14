@@ -12,7 +12,7 @@ export function Header(){
         <StyledHeader>
             <Container>
                 <FlexWrapper justify={"space-between"} align={"center"}>
-                    <Link to ="/"><img src={gradientLogo} alt={"Gradient Logo image"} /></Link>
+                    <Link to ="/Portfolio/home"><img src={gradientLogo} alt={"Gradient Logo image"} /></Link>
                     <NavPanel />
                     <MobileNavigationMenu />
                 </FlexWrapper>
