@@ -62,6 +62,7 @@ const CardContainer = styled.div`
     flex-direction: column;
     align-items: center;
     margin-bottom: 60px;
+    width: 100%;
     max-width: 375px;
     border-radius: 20px;
     box-shadow: 2px 2px 100px rgba(0, 0, 0, 0.2);
