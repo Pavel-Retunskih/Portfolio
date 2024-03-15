@@ -63,7 +63,8 @@ const University = styled.p`
     font-family: Poppins;
     font-size: 12px;
     font-weight: 500;
-    line-height: 28px;
+    line-height: 1.2;
+    max-width: 165px;
 `
 
 

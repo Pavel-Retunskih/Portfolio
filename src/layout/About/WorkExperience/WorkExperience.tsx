@@ -86,7 +86,10 @@ const CompanyName = styled.p`
     line-height: 1.2;
 `
 const Town = styled(CompanyName)`
-
+    @media ${Theme.media.mobile}{
+        margin-top: 5px;
+        max-width: 165px;
+    }
 `
 
 const WorkigPeriod = styled(CompanyName)`
