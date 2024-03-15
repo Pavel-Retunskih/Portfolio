@@ -8,6 +8,7 @@ import { WorkExperince } from "./WorkExperience/WorkExperience";
 import {experience} from "./WorkExperience/WorkExperience"
 import { FlexWrapper } from "../../components/FlexWrapper/FlexWrapp";
 import brickWallImg from "../../assets/images/brickwall.png"
+import { Theme } from "../../styles/Theme";
 
 export function About(){
     return(
@@ -56,6 +57,9 @@ const Text = styled.p`
 const ImageBox = styled.div`
     width: 1330px;
     position: relative;
+    @media ${Theme.media.mobile}{
+        display: none;
+    }
 `
 const AboutImg = styled.img`
     position: absolute;

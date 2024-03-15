@@ -42,7 +42,7 @@ type CardStyledPropsType = {
 }
 export function Card(props:CardStyledPropsType){
     return (
-        <CardWrapper>
+        <CardContainer>
             <img src={props.src} alt="" />
             <Description>
                 <Title>{props.cardTitle}</Title>
@@ -53,27 +53,26 @@ export function Card(props:CardStyledPropsType){
                     <CardLink href="#">View Code</CardLink>
                 </FlexWrapper>
             </Description>
-        </CardWrapper>
+        </CardContainer>
     )
 }
 
-const CardWrapper = styled.div`
+const CardContainer = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-bottom: 60px;
-    width: 375px;
-    height: 570px;
+    max-width: 375px;
     border-radius: 20px;
     box-shadow: 2px 2px 100px rgba(0, 0, 0, 0.2);
-    padding: 0 30px;
     background: rgb(54, 54, 54);
     img{
         border-radius: 20px 20px 0 0;
+        width: 100%;
     }
 `
 const Description = styled.div`
-    
+    padding: 0 30px;
 `
 
 const Title = styled.h3`

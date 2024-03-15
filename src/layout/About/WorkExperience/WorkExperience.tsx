@@ -1,5 +1,7 @@
 import styled from "styled-components"
 import { FlexWrapper } from "../../../components/FlexWrapper/FlexWrapp"
+import { Theme } from "../../../styles/Theme"
+import { wrap } from "module"
 
 export const experience = [
     {position: "Junior Web Developer",
@@ -38,8 +40,10 @@ export function WorkExperince (props : WorkExperincePropsType) {
                 <span>{props.working}</span>
             </FlexWrapper>
             <FlexWrapper justify={"space-between"} wrap={"wrap"}>
-                <CompanyName>{props.company}</CompanyName>
-                <Town>{props.place}</Town>
+                <SyledWrapper justify={"space-between"} wrap={"wrap"}>
+                    <CompanyName>{props.company}</CompanyName>
+                    <Town>{props.place}</Town>
+                </SyledWrapper>
                 <WorkigPeriod>{props.period}</WorkigPeriod>
             </FlexWrapper>
         </CardBox>
@@ -70,7 +74,8 @@ const JobTitle = styled.h3`
     font-weight: 400;
     line-height: 28px;
     letter-spacing: 1px;
-    max-width: 175px;
+    @media ${Theme.media.mobile}{
+        max-width: 175px;}
 `
 
 const CompanyName = styled.p`
@@ -78,12 +83,19 @@ const CompanyName = styled.p`
     font-family: Poppins;
     font-size: 12px;
     font-weight: 500;
-    line-height: 28px;
+    line-height: 1.2;
 `
 const Town = styled(CompanyName)`
 
 `
 
 const WorkigPeriod = styled(CompanyName)`
-    
+
+`
+const SyledWrapper = styled(FlexWrapper)`
+    max-width: 50%;
+    @media ${Theme.media.mobile}{
+        flex-direction: column;
+    }
+
 `
