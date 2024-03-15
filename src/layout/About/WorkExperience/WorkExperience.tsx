@@ -96,7 +96,8 @@ const WorkigPeriod = styled(CompanyName)`
 
 `
 const SyledWrapper = styled(FlexWrapper)`
-    max-width: 50%;
+    max-width: 60%;
+    flex-grow: 1;
     @media ${Theme.media.mobile}{
         flex-direction: column;
     }
