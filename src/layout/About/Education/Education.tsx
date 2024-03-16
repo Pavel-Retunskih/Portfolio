@@ -17,7 +17,7 @@ export function Education(props : EducationPropsType){
                 <Speciality>{props.title}</Speciality>
                 <span>{props.working}</span>
             </FlexWrapper>
-            <FlexWrapper justify={"space-between"} wrap={"wrap"}>
+            <FlexWrapper justify={"space-between"} wrap={"wrap"} margin = {"10px 0 0 0"}>
                 <University>{props.university}</University>
                 <EducationPeriod>{props.period}</EducationPeriod>
             </FlexWrapper>

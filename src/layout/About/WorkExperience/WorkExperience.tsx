@@ -19,7 +19,7 @@ export function WorkExperince (props : WorkExperincePropsType) {
                 <JobTitle>{props.title}</JobTitle>
                 <span>{props.working}</span>
             </FlexWrapper>
-            <FlexWrapper justify={"space-between"} wrap={"wrap"}>
+            <FlexWrapper justify={"space-between"} wrap={"wrap"} margin = {"10px 0 0 0"}>
                 <SyledWrapper justify={"space-between"} wrap={"wrap"}>
                     <CompanyName>{props.company}</CompanyName>
                     <Town>{props.place}</Town>
