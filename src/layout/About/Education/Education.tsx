@@ -8,13 +8,7 @@ type EducationPropsType = {
     university: string
     period: string
 }
-export const educationData =[
-    {position: "JBachelor in Electronics & Communication",
-    workingHours: "Full Time",
-    university: "Bangalore Instutute of Technology",
-    workPeriod: "Aug 2015 - Dec 2020"
-    }
-]
+
 
 export function Education(props : EducationPropsType){
     return(

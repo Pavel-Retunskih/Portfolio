@@ -1,14 +1,42 @@
 import styled from "styled-components";
 import { Container } from "../../components/Container/Container";
 import { Education } from "./Education/Education";
-import { educationData } from "./Education/Education";
 import { Section } from "../../components/Section/Section";
 import { SectionTitle } from "../../components/SectionTitle/SectionTitle";
 import { WorkExperince } from "./WorkExperience/WorkExperience";
-import {experience} from "./WorkExperience/WorkExperience"
 import { FlexWrapper } from "../../components/FlexWrapper/FlexWrapp";
 import brickWallImg from "../../assets/images/brickwall.png"
 import { Theme } from "../../styles/Theme";
+
+
+const experienceData = [
+    {position: "Junior Web Developer",
+    workingHours: "Full Time",
+    company: "Dr. Rajkumar's Learning App",
+    place: "Bengaluru",
+    workPeriod: "Sep 2021 - Dec 2021"
+    },
+    {position: "Web Development Intern",
+    workingHours: "Internship",
+    company: "IonPixelz Web Solutions",
+    place: "Bengaluru",
+    workPeriod: "Sep 2021 - Dec 2021"
+    },
+    {position: "SEO / SEM Specialist",
+    workingHours: "Internship",
+    company: "HAAPS",
+    place: "Bengaluru",
+    workPeriod: "Sep 2021 - Dec 2021"
+    },
+]
+
+const educationData =[
+    {position: "JBachelor in Electronics & Communication",
+    workingHours: "Full Time",
+    university: "Bangalore Instutute of Technology",
+    workPeriod: "Aug 2015 - Dec 2020"
+    }
+]
 
 export function About(){
     return(
@@ -19,7 +47,7 @@ export function About(){
                         <SectionTitle marginBottom={"38px"}>About Me</SectionTitle>
                         <Text>The Generator App is an online tool that helps you to export ready-made templates ready to work as your future website. It helps you to combine slides, panels and other components and export it as a set of static files: HTML/CSS/JS.</Text>
                         <SectionTitle>Work Experience</SectionTitle>
-                        {experience.map(({position, workingHours, company, place, workPeriod})=> 
+                        {experienceData.map(({position, workingHours, company, place, workPeriod})=> 
                         <WorkExperince 
                             title = {position}
                             working = {workingHours}

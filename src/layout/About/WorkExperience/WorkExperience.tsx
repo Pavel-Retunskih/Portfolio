@@ -1,28 +1,8 @@
 import styled from "styled-components"
 import { FlexWrapper } from "../../../components/FlexWrapper/FlexWrapp"
 import { Theme } from "../../../styles/Theme"
-import { wrap } from "module"
 
-export const experience = [
-    {position: "Junior Web Developer",
-    workingHours: "Full Time",
-    company: "Dr. Rajkumar's Learning App",
-    place: "Bengaluru",
-    workPeriod: "Sep 2021 - Dec 2021"
-    },
-    {position: "Web Development Intern",
-    workingHours: "Internship",
-    company: "IonPixelz Web Solutions",
-    place: "Bengaluru",
-    workPeriod: "Sep 2021 - Dec 2021"
-    },
-    {position: "SEO / SEM Specialist",
-    workingHours: "Internship",
-    company: "HAAPS",
-    place: "Bengaluru",
-    workPeriod: "Sep 2021 - Dec 2021"
-    },
-]
+
 
 type WorkExperincePropsType = {
     title: string
