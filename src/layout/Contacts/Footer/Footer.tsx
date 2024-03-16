@@ -9,14 +9,14 @@ export function Footer(){
     return(
         <FooterContainer>
             <StyledFlexWrapper align={"center"} justify={"space-between"}>
-                <img src={`${logo_grey}`} alt="" />
+                <img src={`${logo_grey}`} alt="Grey Logo" />
                 <FlexWrapper align={"center"} gap={"60px"}>
-                    <span>+91 12345 09876</span>
-                    <span>info@example.com</span>
+                    <ContactsText>+91 12345 09876</ContactsText>
+                    <ContactsText>info@example.com</ContactsText>
                     <FlexWrapper align={"center"} gap={"20px"}>
-                    <SocialIconLink><Icon iconId={"githubSocialIcon"} /></SocialIconLink>
-                    <SocialIconLink><Icon iconId={"twitterSocialIcon"} /></SocialIconLink>
-                    <SocialIconLink><Icon iconId={"linkedInSocialIcon"} /></SocialIconLink>
+                        <SocialIconLink><Icon iconId={"githubSocialIcon"} /></SocialIconLink>
+                        <SocialIconLink><Icon iconId={"twitterSocialIcon"} /></SocialIconLink>
+                        <SocialIconLink><Icon iconId={"linkedInSocialIcon"} /></SocialIconLink>
                     </FlexWrapper>
                 </FlexWrapper>
             </StyledFlexWrapper>
@@ -42,9 +42,17 @@ const SocialIconLink = styled.a`
 const FooterContainer = styled.footer`
     width: 100%;
     padding-bottom: 61px;
+    margin-top: 295px;
 `
 const StyledFlexWrapper = styled(FlexWrapper)`
     padding-bottom: 50px;
     border-bottom: 2px solid rgba(102, 102, 102, 0.3);
     margin-bottom: 40px;
+`
+const ContactsText = styled.span`
+    color: rgb(66, 68, 110);
+    font-family: DM Sans;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 26px;
 `

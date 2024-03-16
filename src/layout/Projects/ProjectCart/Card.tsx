@@ -6,6 +6,7 @@ import imgCart4 from "../../../assets/images/projectImg4.jpg"
 import imgCart5 from "../../../assets/images/projectImg5.jpg"
 import imgCart6 from "../../../assets/images/projectImg6.jpg"
 import { FlexWrapper } from "../../../components/FlexWrapper/FlexWrapp"
+import { Icon } from "../../../components/Icon/Icon"
 
 export const Cards = [
     {src : imgCart1,
@@ -48,9 +49,9 @@ export function Card(props:CardStyledPropsType){
                 <Title>{props.cardTitle}</Title>
                 <Text>{props.cardDescription}</Text>
                 <Stack>{`Tech stack : ${props.cardStackDescription}`}</Stack>
-                <FlexWrapper justify={"space-between"}>
-                    <CardLink href="#">Live Preview</CardLink>
-                    <CardLink href="#">View Code</CardLink>
+                <FlexWrapper justify={"space-between"} margin="0 0 25px 0">
+                    <CardLink href="#"> <Icon iconId = {"link-chainIcon"} width={"20"} height={"20"} viewBox = {"0 0 20 20"}/>Live Preview</CardLink>
+                    <CardLink href="#"><Icon iconId = {"githubIcon"} width={"20"} height={"20"} viewBox = {"0 0 90 90"}/>View Code</CardLink>
                 </FlexWrapper>
             </Description>
         </CardContainer>
@@ -94,15 +95,12 @@ const Stack = styled(Text)`
     margin: 12px 0 21px 0;
 `
 const CardLink = styled.a`
+    display: flex;
+    align-items: center;
+    gap: 10px;
     color: rgb(255, 255, 255);
     font-size: 16px;
     font-weight: 400;
     line-height: 26px;
     text-decoration-line: underline;
-        &::before{
-            display: flex;
-            width: 20px;
-            height: 20px;
-            background-image: url();
-        }
 `
