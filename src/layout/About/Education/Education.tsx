@@ -1,6 +1,7 @@
 import styled from "styled-components"
 import { FlexWrapper } from "../../../components/FlexWrapper/FlexWrapp"
 import { Theme } from "../../../styles/Theme"
+import { Icon } from "../../../components/Icon/Icon"
 
 type EducationPropsType = {
     title: string
@@ -18,8 +19,14 @@ export function Education(props : EducationPropsType){
                 <span>{props.working}</span>
             </FlexWrapper>
             <FlexWrapper justify={"space-between"} wrap={"wrap"} margin = {"10px 0 0 0"}>
-                <University>{props.university}</University>
-                <EducationPeriod>{props.period}</EducationPeriod>
+                <FlexWrapper gap={"7px"} align={"center"}>
+                    <Icon iconId={"office-building"} width={"9"} height={"9"} viewBox={"3 1 10 10"} />
+                    <University>{props.university}</University>
+                </FlexWrapper>
+                <FlexWrapper gap={"7px"} align={"center"}>
+                    <Icon iconId={"calendar"} width={"9"} height={"9"} viewBox={"2 0 12 11"} />
+                    <EducationPeriod>{props.period}</EducationPeriod>
+                </FlexWrapper>
             </FlexWrapper>
         </EducationBox>
     )

@@ -1,6 +1,7 @@
 import styled from "styled-components"
 import { FlexWrapper } from "../../../components/FlexWrapper/FlexWrapp"
 import { Theme } from "../../../styles/Theme"
+import { Icon } from "../../../components/Icon/Icon"
 
 
 
@@ -21,10 +22,19 @@ export function WorkExperince (props : WorkExperincePropsType) {
             </FlexWrapper>
             <FlexWrapper justify={"space-between"} wrap={"wrap"} margin = {"10px 0 0 0"}>
                 <SyledWrapper justify={"space-between"} wrap={"wrap"}>
-                    <CompanyName>{props.company}</CompanyName>
-                    <Town>{props.place}</Town>
+                    <FlexWrapper gap={"7px"} align={"center"}>
+                        <Icon iconId={"office-building"} width={"9"} height={"9"} viewBox={"3 1 10 10"} />
+                        <CompanyName>{props.company}</CompanyName>
+                    </FlexWrapper>
+                    <FlexWrapper gap={"7px"} align={"center"}>
+                        <Icon iconId={"location"} width={"9"} height={"9"} viewBox={"3 0 10 11"} />
+                        <Town>{props.place}</Town>
+                    </FlexWrapper>
                 </SyledWrapper>
-                <WorkigPeriod>{props.period}</WorkigPeriod>
+                <FlexWrapper gap={"7px"} align={"center"}>
+                    <Icon iconId={"calendar"} width={"9"} height={"9"} viewBox={"2 0 12 11"} />
+                    <WorkigPeriod>{props.period}</WorkigPeriod>
+                </FlexWrapper>
             </FlexWrapper>
         </CardBox>
     )
