@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { font } from "../../styles/Common";
 
 type SectionTitlePropsType = {
     size?: string
@@ -9,9 +10,7 @@ type SectionTitlePropsType = {
 }
 
 export const SectionTitle = styled.h2<SectionTitlePropsType>`
-    font-size: ${props=>props.size || "42px"};
-    font-weight: ${props => props.weight || 700};
-    line-height: ${props => props.lineHeight || "26px"};
+    ${font({weight: 700, lineHeight: "26px", Fmax: 42, Fmin: 36, color: "#CCCCCC"} )}
     margin-bottom: ${props => props.marginBottom || "38px"};
     line-height: 1;
 `
