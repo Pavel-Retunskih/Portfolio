@@ -19,12 +19,12 @@ export function Education(props : EducationPropsType){
                 <span>{props.working}</span>
             </FlexWrapper>
             <FlexWrapper justify={"space-between"} wrap={"wrap"} margin = {"10px 0 0 0"}>
-                <FlexWrapper gap={"7px"} align={"center"}>
+                <FlexWrapper gap={"7px"} align={"baseline"}>
                     <Icon iconId={"office-building"} width={"9"} height={"9"} viewBox={"3 1 10 10"} />
                     <University>{props.university}</University>
                 </FlexWrapper>
-                <FlexWrapper gap={"7px"} align={"center"}>
-                    <Icon iconId={"calendar"} width={"9"} height={"9"} viewBox={"2 0 12 11"} />
+                <FlexWrapper gap={"7px"} align={"baseline"}>
+                    <Icon iconId={"calendar"} width={"9"} height={"9"} viewBox={"1 0 13 13"} />
                     <EducationPeriod>{props.period}</EducationPeriod>
                 </FlexWrapper>
             </FlexWrapper>

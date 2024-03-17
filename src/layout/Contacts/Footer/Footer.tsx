@@ -5,11 +5,12 @@ import logo_grey  from "../../../assets/images/logo_grey.png";
 import { FlexWrapper } from "../../../components/FlexWrapper/FlexWrapp";
 import { NavButtons } from "../../Header/NavPanel/NavPanel";
 import { GradientText } from "../../../components/GradientText/GradientText";
+import { Theme } from "../../../styles/Theme";
 export function Footer(){
     return(
         <FooterContainer>
             <StyledFlexWrapper align={"center"} justify={"space-between"}>
-                <img src={`${logo_grey}`} alt="Grey Logo" />
+                <img src={`${logo_grey}`} alt="Grey" />
                 <FlexWrapper align={"center"} gap={"60px"}>
                     <ContactsText>+91 12345 09876</ContactsText>
                     <ContactsText>info@example.com</ContactsText>
@@ -48,6 +49,11 @@ const StyledFlexWrapper = styled(FlexWrapper)`
     padding-bottom: 50px;
     border-bottom: 2px solid rgba(102, 102, 102, 0.3);
     margin-bottom: 40px;
+        img{
+            @media ${Theme.media.mobile}{
+                display: none;
+            }
+        }
 `
 const ContactsText = styled.span`
     color: rgb(66, 68, 110);

@@ -20,7 +20,7 @@ export function WorkExperince (props : WorkExperincePropsType) {
                 <JobTitle>{props.title}</JobTitle>
                 <span>{props.working}</span>
             </FlexWrapper>
-            <FlexWrapper justify={"space-between"} wrap={"wrap"} margin = {"10px 0 0 0"}>
+            <FlexWrapper justify={"space-between"} align="baseline" wrap={"wrap"} margin = {"10px 0 0 0"}>
                 <SyledWrapper justify={"space-between"} wrap={"wrap"}>
                     <FlexWrapper gap={"7px"} align={"center"}>
                         <Icon iconId={"office-building"} width={"9"} height={"9"} viewBox={"3 1 10 10"} />

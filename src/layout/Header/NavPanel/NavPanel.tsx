@@ -34,4 +34,7 @@ export const NavButtons = styled.ul`
     font-weight: 500;
     display: flex;
     gap: 60px;
+    @media ${Theme.media.tablet}{
+        display: none;
+    }
 `
