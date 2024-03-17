@@ -19,17 +19,24 @@ body{
 a{
     text-decoration: none;
     color: ${Theme.colors.navButtonsColor};
+    z-index: 3;
 }
 ul{
     list-style: none;
 }
 h2{
-    color: ${Theme.colors.sectionTitleColor}
+    color: ${Theme.colors.sectionTitleColor};
+    z-index: 3;
 }
 h3{
     color: ${Theme.colors.sectionSubTitleColor};
+    z-index: 3;
 }
 p {
     color: ${Theme.colors.textColor};
+    z-index: 3;
+}
+svg {
+    z-index: 3;
 }
 `
