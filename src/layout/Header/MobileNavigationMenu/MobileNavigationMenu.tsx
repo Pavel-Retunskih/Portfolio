@@ -67,8 +67,14 @@ const BurgerButton = styled.button<{isOpen: boolean}>`
         position: absolute;
         bottom: 40px;
         left: 50px;
+        transition: all 0.1s ease-in-out;
         ${props => props.isOpen && css<{isOpen : boolean}>`
-            background-color: rgba(255, 255, 255, 0);
+           // background-color: rgba(255, 255, 255, 0);
+          // transform: translateY(0) rotate(90deg);
+          // left: 50%; /*Add this*/
+         // transform: translate(-50%, 0); /*Add this*/
+
+            width:0;
         `}
         
         &::before{

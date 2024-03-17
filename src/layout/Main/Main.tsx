@@ -20,7 +20,7 @@ export function Main(){
                     <MainTitle>
                         Hi 👋,<br/>
                         My name is<br/>
-                        <GradientText font= {"Poppins"}>Pavan MG</GradientText><br/>
+                        <GradientText font= {"Poppins"} weight={700} lineHeight={"70px"} fmin={36} fmax={58}>Pavan MG</GradientText><br/>
                         I build things for web<br/>
                     </MainTitle>
                     <MainImageWrapper>

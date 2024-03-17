@@ -11,7 +11,7 @@ export function Contacts(){
             <Container>
                 <FlexWrapper direction="column" justify="center" align="center">
                     <SectionTitle>For any questions please mail me:</SectionTitle>
-                    <GradientText>hi@pavanmg.in</GradientText>
+                    <GradientText font={"DM Sans"} weight={700} fmax={58} lineHeight={"70px"} fmin={46}>hi@pavanmg.in</GradientText>
                     <Footer/>
                 </FlexWrapper>
             </Container>
