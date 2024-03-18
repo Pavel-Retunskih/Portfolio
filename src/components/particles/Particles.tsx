@@ -37,6 +37,12 @@ export const SparklesCore = (props: ParticlesProps) => {
   }, []);
   const controls = useAnimation();
 
+function changeColor(){
+  const colors = {
+
+  }
+}
+
   const particlesLoaded = async (container?: Container) => {
     if (container) {
       console.log(container);
@@ -122,30 +128,30 @@ export const SparklesCore = (props: ParticlesProps) => {
                 value: particleColor || "#ffffff",
                 animation: {
                   h: {
-                    count: 0,
-                    enable: false,
-                    speed: 1,
+                    count: 90,
+                    enable: true,
+                    speed: 50,
                     decay: 0,
                     delay: 0,
-                    sync: true,
+                    sync: false,
                     offset: 0,
                   },
                   s: {
-                    count: 0,
-                    enable: false,
-                    speed: 1,
+                    count: 100,
+                    enable: true,
+                    speed: 30,
                     decay: 0,
                     delay: 0,
-                    sync: true,
+                    sync: false,
                     offset: 0,
                   },
                   l: {
-                    count: 0,
-                    enable: false,
-                    speed: 1,
+                    count: 1,
+                    enable: true,
+                    speed: 10,
                     decay: 0,
                     delay: 0,
-                    sync: true,
+                    sync: false,
                     offset: 0,
                   },
                 },
