@@ -7,6 +7,7 @@ import { WorkExperince } from "./WorkExperience/WorkExperience";
 import { FlexWrapper } from "../../components/FlexWrapper/FlexWrapp";
 import brickWallImg from "../../assets/images/brickwall.png"
 import { Theme } from "../../styles/Theme";
+import { SideText } from "../../components/ui/SideText";
 
 
 const experienceData = [
@@ -44,9 +45,15 @@ export function About(){
             <Container>
                 <FlexWrapper>
                     <FlexWrapper direction={"column"}>
-                        <SectionTitle marginBottom={"38px"}>About Me</SectionTitle>
-                        <Text>The Generator App is an online tool that helps you to export ready-made templates ready to work as your future website. It helps you to combine slides, panels and other components and export it as a set of static files: HTML/CSS/JS.</Text>
-                        <SectionTitle>Work Experience</SectionTitle>
+                        <SideText>
+                            <SectionTitle marginBottom={"38px"}>About Me</SectionTitle>
+                        </SideText>
+                        <SideText>
+                            <Text>The Generator App is an online tool that helps you to export ready-made templates ready to work as your future website. It helps you to combine slides, panels and other components and export it as a set of static files: HTML/CSS/JS.</Text>
+                        </SideText>
+                        <SideText>
+                            <SectionTitle>Work Experience</SectionTitle>
+                        </SideText>
                         {experienceData.map(({position, workingHours, company, place, workPeriod})=> 
                         <WorkExperince 
                             title = {position}
@@ -55,7 +62,9 @@ export function About(){
                             place ={place}
                             period = {workPeriod}/>
                         )}
-                        <SectionTitle>Education</SectionTitle>
+                        <SideText>
+                            <SectionTitle>Education</SectionTitle>
+                        </SideText>
                         {educationData.map(({position, workingHours, university, workPeriod})=>
                         <Education 
                             title = {position}

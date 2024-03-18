@@ -2,6 +2,7 @@ import styled from "styled-components"
 import { FlexWrapper } from "../../../components/FlexWrapper/FlexWrapp"
 import { Icon } from "../../../components/Icon/Icon"
 import { Theme } from "../../../styles/Theme"
+import { SideText } from "../../../components/ui/SideText"
 
 
 type CardStyledPropsType = {
@@ -16,9 +17,15 @@ export function Card(props:CardStyledPropsType){
         <CardContainer>
             <img src={props.src} alt="" />
             <Description>
-                <Title>{props.cardTitle}</Title>
-                <Text>{props.cardDescription}</Text>
-                <Stack>{`Tech stack : ${props.cardStackDescription}`}</Stack>
+                <SideText>
+                    <Title>{props.cardTitle}</Title>
+                </SideText>
+                <SideText>
+                    <Text>{props.cardDescription}</Text>
+                </SideText>
+                <SideText>
+                    <Stack>{`Tech stack : ${props.cardStackDescription}`}</Stack>
+                </SideText>
                 <FlexWrapper justify={"space-between"} margin="0 0 25px 0">
                     <CardLink href="#"> <Icon iconId = {"link-chainIcon"} width={"20"} height={"20"} viewBox = {"0 0 20 20"}/>Live Preview</CardLink>
                     <CardLink href="#"><Icon iconId = {"githubIcon"} width={"20"} height={"20"} viewBox = {"0 0 90 90"}/>View Code</CardLink>

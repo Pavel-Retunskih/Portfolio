@@ -7,6 +7,7 @@ import { GradientText } from "../../components/GradientText/GradientText";
 import { Section } from "../../components/Section/Section";
 import { Theme } from "../../styles/Theme";
 import { font } from "../../styles/Common";
+import { SideText } from "../../components/ui/SideText";
 
 
 export function Main(){
@@ -15,10 +16,20 @@ export function Main(){
             <Container>
                 <FlexWrapper align={"center"} justify={"space-between"} wrap={"wrap"}>
                         <FlexWrapper align={"flex-start"} justify={"space-beetwen"} direction={"column"} >
-                            <TextSpan>Hi 👋,</TextSpan>
-                            <TextSpan>My name is</TextSpan>
-                            <TextSpan><GradientText font= {"Poppins"} weight={700} lineHeight={"70px"} fmin={36} fmax={58}>Pavan MG</GradientText></TextSpan>
-                            <MainTitle>I build things for web</MainTitle>
+                            <SideText>
+                                <TextSpan>Hi 👋,</TextSpan>
+                            </SideText>
+                            <SideText>
+                                <TextSpan>My name is</TextSpan>
+                            </SideText>
+                            <SideText>
+                                <TextSpan>
+                                    <GradientText font= {"Poppins"} weight={700} lineHeight={"70px"} fmin={36} fmax={58}>Pavan MG</GradientText>
+                                </TextSpan>
+                            </SideText>    
+                            <SideText>
+                                <MainTitle>I build things for web</MainTitle>
+                            </SideText>
                         </FlexWrapper>
                     <MainImageWrapper>
                         <MainImage src={`${photo}`} alt="Main Image" />
