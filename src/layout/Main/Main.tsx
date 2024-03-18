@@ -18,12 +18,12 @@ export function Main(){
         <Section margintop="200px" overflow="visible">
             <Container>
                 <FlexWrapper align={"center"} justify={"space-between"} wrap={"wrap"}>
-                    <MainTitle>
-                        Hi 👋,<br/>
-                        My name is<br/>
-                        <GradientText font= {"Poppins"} weight={700} lineHeight={"70px"} fmin={36} fmax={58}>Pavan MG</GradientText><br/>
-                        I build things for web<br/>
-                    </MainTitle>
+                        <FlexWrapper align={"flex-start"} justify={"space-beetwen"} direction={"column"} >
+                            <TextSpan>Hi 👋,</TextSpan>
+                            <TextSpan>My name is</TextSpan>
+                            <TextSpan><GradientText font= {"Poppins"} weight={700} lineHeight={"70px"} fmin={36} fmax={58}>Pavan MG</GradientText></TextSpan>
+                            <MainTitle>I build things for web</MainTitle>
+                        </FlexWrapper>
                     <MainImageWrapper>
                         <MainImage src={`${photo}`} alt="Main Image" />
                     </MainImageWrapper>
@@ -62,6 +62,10 @@ const MainImageWrapper = styled.div`
         margin-top: 10px;
         margin-right: 0;
     }
+    @media ${Theme.media.tablet}{
+        margin: 0 auto;
+        margin-top: 100px;
+    }
 
     &::before{
         content: "";
@@ -76,4 +80,11 @@ const MainImageWrapper = styled.div`
         height: 350px;
     }
     }
+`
+const TextSpan = styled.span`
+    ${font({family:"Poppins", weight:700, lineHeight: "70px", Fmax:58, Fmin:36})};
+    letter-spacing: -1px;
+    padding-top: 20px;
+    text-align: left;
+    color:#D9D9D9;
 `

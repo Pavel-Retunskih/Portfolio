@@ -67,6 +67,9 @@ const CardContainer = styled.div`
     margin-bottom: 60px;
     width: 100%;
     max-width: 375px;
+    @media ${Theme.media.tablet}{
+        max-width: 360px;
+    }
     border-radius: 20px;
     box-shadow: 2px 2px 100px rgba(0, 0, 0, 0.2);
     background: rgb(54, 54, 54);
@@ -77,7 +80,7 @@ const CardContainer = styled.div`
 `
 const Description = styled.div`
     padding: 0 30px;
-    @media ${Theme.media.mobile}{
+    @media ${Theme.media.tablet}{
         padding: 0 10px;
     }
 `
