@@ -7,6 +7,7 @@ import imgCart5 from "../../../assets/images/projectImg5.jpg"
 import imgCart6 from "../../../assets/images/projectImg6.jpg"
 import { FlexWrapper } from "../../../components/FlexWrapper/FlexWrapp"
 import { Icon } from "../../../components/Icon/Icon"
+import { Theme } from "../../../styles/Theme"
 
 export const Cards = [
     {src : imgCart1,
@@ -76,20 +77,23 @@ const CardContainer = styled.div`
 `
 const Description = styled.div`
     padding: 0 30px;
+    @media ${Theme.media.mobile}{
+        padding: 0 10px;
+    }
 `
 
 const Title = styled.h3`
     color: rgb(204, 204, 204);
     font-size: 28px;
     font-weight: 500;
-    line-height: 26px;
+    line-height: 1.2;
     margin: 27px 0 17px 0;
 `
 const Text = styled.p`
     color: rgb(204, 204, 204);
     font-size: 18px;
     font-weight: 300;
-    line-height: 26px;
+    line-height: 1.2;
 `
 const Stack = styled(Text)`
     font-size: 14px;
@@ -102,6 +106,6 @@ const CardLink = styled.a`
     color: rgb(255, 255, 255);
     font-size: 16px;
     font-weight: 400;
-    line-height: 26px;
+    line-height: 1.2;
     text-decoration-line: underline;
 `
