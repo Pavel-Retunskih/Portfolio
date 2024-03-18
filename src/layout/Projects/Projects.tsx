@@ -4,12 +4,12 @@ import styled from "styled-components";
 import { SectionTitle } from "../../components/SectionTitle/SectionTitle";
 import { Container } from "../../components/Container/Container";
 import { Section } from "../../components/Section/Section";
-import imgCart1 from "../../../assets/images/projectImg1.jpg"
-import imgCart2 from "../../../assets/images/projectImg2.jpg"
-import imgCart3 from "../../../assets/images/projectImg3.jpg"
-import imgCart4 from "../../../assets/images/projectImg4.jpg"
-import imgCart5 from "../../../assets/images/projectImg5.jpg"
-import imgCart6 from "../../../assets/images/projectImg6.jpg"
+import imgCart1 from "../../assets/images/projectImg1.jpg"
+import imgCart2 from "../../assets/images/projectImg2.jpg"
+import imgCart3 from "../../assets/images/projectImg3.jpg"
+import imgCart4 from "../../assets/images/projectImg4.jpg"
+import imgCart5 from "../../assets/images/projectImg5.jpg"
+import imgCart6 from "../../assets/images/projectImg6.jpg"
 
 const ProjectCards = [
     {src : imgCart1,
