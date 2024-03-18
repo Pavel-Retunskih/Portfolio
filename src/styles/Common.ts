@@ -29,7 +29,7 @@ export const gradientFont = ({font, weight, lineHeight, Fmax, gradient, Fmin}:Gr
     font-size : calc( (100vw - 360px)/(1600 - 360) * (${Fmax} - ${Fmin}) + ${Fmin}px);
     font-family : ${font || 'Poppins'};
     font-weight : ${weight || 400};
-    line-height : ${lineHeight || "70px"};
+    line-height : ${lineHeight || "1.2"};
     background: ${gradient || "linear-gradient(90.00deg, rgb(19, 176, 245),rgb(231, 15, 170))"};
     -webkit-background-clip:text;
     -webkit-text-fill-color:transparent;

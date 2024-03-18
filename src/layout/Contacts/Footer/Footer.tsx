@@ -60,5 +60,5 @@ const ContactsText = styled.span`
     font-family: DM Sans;
     font-size: 18px;
     font-weight: 400;
-    line-height: 26px;
+    line-height: 1.2;
 `
