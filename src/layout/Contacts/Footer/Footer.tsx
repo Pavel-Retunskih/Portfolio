@@ -11,7 +11,7 @@ export function Footer(){
         <FooterContainer>
             <StyledFlexWrapper align={"center"} justify={"space-between"}>
                 <img src={`${logo_grey}`} alt="Grey" />
-                <ContactWrapper align={"center"} gap={"60px"}>
+                <FlexWrapper align={"center"} gap={"60px"}>
                     <ContactsText>+91 12345 09876</ContactsText>
                     <ContactsText>info@example.com</ContactsText>
                     <FlexWrapper align={"center"} gap={"20px"}>
@@ -19,7 +19,7 @@ export function Footer(){
                         <SocialIconLink><Icon iconId={"twitterSocialIcon"} /></SocialIconLink>
                         <SocialIconLink><Icon iconId={"linkedInSocialIcon"} /></SocialIconLink>
                     </FlexWrapper>
-                </ContactWrapper>
+                </FlexWrapper>
             </StyledFlexWrapper>
             <FlexWrapper align={"center"} justify={"space-between"}>
                 <FlexWrapper align={"center"} justify={"space-between"}>
@@ -54,22 +54,10 @@ const StyledFlexWrapper = styled(FlexWrapper)`
                 display: none;
             }
         }
-    @media ${Theme.media.mobile}{
-        justify-content: center;
-    }
 `
 const ContactsText = styled.span`
     color: rgb(66, 68, 110);
     font-family: DM Sans;
     font-size: 18px;
     font-weight: 400;
-    line-height: 1.2;
-`
-
-const ContactWrapper = styled(FlexWrapper)`
-     @media ${Theme.media.mobile}{
-        flex-direction: column;
-        gap: 20px;
-        justify-content: center;
-    }
 `
