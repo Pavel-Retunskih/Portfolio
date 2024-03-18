@@ -7,10 +7,6 @@ import { GradientText } from "../../components/GradientText/GradientText";
 import { Section } from "../../components/Section/Section";
 import { Theme } from "../../styles/Theme";
 import { font } from "../../styles/Common";
-import { SparklesCore } from "../../components/particles/Particles";
-
-
-
 
 
 export function Main(){

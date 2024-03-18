@@ -1,40 +1,9 @@
 import styled from "styled-components"
-import imgCart1 from "../../../assets/images/projectImg1.jpg"
-import imgCart2 from "../../../assets/images/projectImg2.jpg"
-import imgCart3 from "../../../assets/images/projectImg3.jpg"
-import imgCart4 from "../../../assets/images/projectImg4.jpg"
-import imgCart5 from "../../../assets/images/projectImg5.jpg"
-import imgCart6 from "../../../assets/images/projectImg6.jpg"
 import { FlexWrapper } from "../../../components/FlexWrapper/FlexWrapp"
 import { Icon } from "../../../components/Icon/Icon"
 import { Theme } from "../../../styles/Theme"
 
-export const Cards = [
-    {src : imgCart1,
-    title: 'Project Tile goes here',
-    subtitle: 'This is sample project description random things are here in description This is sample project lorem ipsum generator for dummy content',
-    stack: 'HTML , JavaScript, SASS, React'},
-    {src : imgCart2,
-        title: 'Project Tile goes here',
-        subtitle: 'This is sample project description random things are here in description This is sample project lorem ipsum generator for dummy content',
-        stack: 'HTML , JavaScript, SASS, React'},
-    {src : imgCart3,
-        title: 'Project Tile goes here',
-        subtitle: 'This is sample project description random things are here in description This is sample project lorem ipsum generator for dummy content',
-        stack: 'HTML , JavaScript, SASS, React'},
-    {src : imgCart4,
-        title: 'Project Tile goes here',
-        subtitle: 'This is sample project description random things are here in description This is sample project lorem ipsum generator for dummy content',
-        stack: 'HTML , JavaScript, SASS, React'},
-    {src : imgCart5,
-        title: 'Project Tile goes here',
-        subtitle: 'This is sample project description random things are here in description This is sample project lorem ipsum generator for dummy content',
-        stack: 'HTML , JavaScript, SASS, React'},
-    {src : imgCart6,
-        title: 'Project Tile goes here',
-        subtitle: 'This is sample project description random things are here in description This is sample project lorem ipsum generator for dummy content',
-        stack: 'HTML , JavaScript, SASS, React'}
-]
+
 type CardStyledPropsType = {
     src: string
     cardTitle?: string
