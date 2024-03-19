@@ -55,6 +55,11 @@ const MainImage = styled.img`
         width: 200px;
         height: 200px;
     }
+    @media ${Theme.media.other}{
+        margin-right: 0;
+        width: 348px;
+        height: 348px;
+    }
 `
 const MainImageWrapper = styled.div`
     position: relative;

@@ -6,12 +6,15 @@ type SideTextPropsType = {
     children: JSX.Element
 }
 
-export const OpacityIn = ({children}:SideTextPropsType)=>{
+export const SlideUp = ({children}:SideTextPropsType)=>{
     const ref = useRef(null);
     const isInView = useInView(ref, { once:true });
 
     const mainControls = useAnimation();
- 
+    const isOver = (()=>{
+        console.log("Over")
+    })
+
     useEffect(()=>{
         if (isInView) {
             mainControls.start("visible")
@@ -19,11 +22,11 @@ export const OpacityIn = ({children}:SideTextPropsType)=>{
         },[isInView])
 
     return(
-        <Wrapp ref = {ref}>
+        <Wrapp ref = {ref} onMouseOver={isOver}>
             <motion.div
             variants={{
-                hidden:{opacity: 0, x: 70, rotate:"360deg"},
-                visible:{opacity: 1, x: 0, rotate:"0deg"}
+                hidden:{opacity: 0, height: 0},
+                visible:{opacity: 1, height: "100%"}
             }}
             initial = "hidden"
             animate={mainControls}

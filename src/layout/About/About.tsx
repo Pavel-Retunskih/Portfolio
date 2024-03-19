@@ -46,7 +46,7 @@ export function About(){
                 <FlexWrapper>
                     <FlexWrapper direction={"column"}>
                         <SideText>
-                            <SectionTitle marginBottom={"38px"}>About Me</SectionTitle>
+                            <SectionTitle>About Me</SectionTitle>
                         </SideText>
                         <SideText>
                             <Text>The Generator App is an online tool that helps you to export ready-made templates ready to work as your future website. It helps you to combine slides, panels and other components and export it as a set of static files: HTML/CSS/JS.</Text>
