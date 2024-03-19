@@ -74,8 +74,10 @@ const ContactWrapper = styled(FlexWrapper)`
     }
 `
 const StyledNavFlexWrapper = styled(FlexWrapper)`
-    flex-direction: column;
+    @media ${Theme.media.other}{
+        flex-direction: column;
     p{
         margin-top: 50px;
+    }
     }
 `
