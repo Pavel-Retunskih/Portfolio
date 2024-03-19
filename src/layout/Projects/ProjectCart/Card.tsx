@@ -3,6 +3,7 @@ import { FlexWrapper } from "../../../components/FlexWrapper/FlexWrapp"
 import { Icon } from "../../../components/Icon/Icon"
 import { Theme } from "../../../styles/Theme"
 import { SideText } from "../../../components/ui/SideText"
+import { OpacityIn } from "../../../components/ui/OpacityIn"
 
 
 type CardStyledPropsType = {
@@ -15,7 +16,7 @@ type CardStyledPropsType = {
 export function Card(props:CardStyledPropsType){
     return (
         <CardContainer>
-            <img src={props.src} alt="" />
+            <OpacityIn><img src={props.src} alt="" /></OpacityIn>
             <Description>
                 <SideText>
                     <Title>{props.cardTitle}</Title>

@@ -29,7 +29,7 @@ export const SideText = ({children}:SideTextPropsType)=>{
             }}
             initial = "hidden"
             animate={mainControls}
-            transition={{duration: 0.5, delay: 0.25}}
+            transition={{duration: 0.5, delay: 0.25, ease:"easeIn"}}
             >{children}
             </motion.div>
             <motion.div
@@ -39,7 +39,7 @@ export const SideText = ({children}:SideTextPropsType)=>{
             }}
             initial = "hidden"
             animate = {slideControls}
-            transition={{delay: 0.15, duration: 0.5, ease:"easeOut"}}
+            transition={{delay: 0.15, duration: 0.5, ease:"easeIn"}}
             style = {{
                 position: "absolute",
                 top: 4,
