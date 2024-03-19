@@ -2,6 +2,7 @@ import styled from "styled-components"
 import { FlexWrapper } from "../../../components/FlexWrapper/FlexWrapp"
 import { Theme } from "../../../styles/Theme"
 import { Icon } from "../../../components/Icon/Icon"
+import { SideText } from "../../../components/ui/SideText"
 
 
 
@@ -17,23 +18,33 @@ export function WorkExperince (props : WorkExperincePropsType) {
     return(
         <CardBox>
             <FlexWrapper justify={"space-between"}>
-                <JobTitle>{props.title}</JobTitle>
-                <span>{props.working}</span>
+                <SideText>
+                    <JobTitle>{props.title}</JobTitle>
+                </SideText>    
+                <SideText>
+                    <span>{props.working}</span>
+                </SideText>
             </FlexWrapper>
             <FlexWrapper justify={"space-between"} align="baseline" wrap={"wrap"} margin = {"10px 0 0 0"}>
                 <SyledWrapper justify={"space-between"} wrap={"wrap"}>
                     <FlexWrapper gap={"7px"} align={"center"}>
                         <Icon iconId={"office-building"} width={"9"} height={"9"} viewBox={"3 1 10 10"} />
-                        <CompanyName>{props.company}</CompanyName>
+                        <SideText>
+                            <CompanyName>{props.company}</CompanyName>
+                        </SideText>
                     </FlexWrapper>
                     <FlexWrapper gap={"7px"} align={"center"}>
                         <Icon iconId={"location"} width={"9"} height={"9"} viewBox={"3 0 10 11"} />
-                        <Town>{props.place}</Town>
+                        <SideText>
+                            <Town>{props.place}</Town>
+                        </SideText>
                     </FlexWrapper>
                 </SyledWrapper>
                 <FlexWrapper gap={"7px"} align={"center"}>
                     <Icon iconId={"calendar"} width={"9"} height={"9"} viewBox={"2 0 12 11"} />
-                    <WorkigPeriod>{props.period}</WorkigPeriod>
+                    <SideText>
+                        <WorkigPeriod>{props.period}</WorkigPeriod>
+                    </SideText>
                 </FlexWrapper>
             </FlexWrapper>
         </CardBox>

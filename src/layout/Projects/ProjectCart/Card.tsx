@@ -27,8 +27,12 @@ export function Card(props:CardStyledPropsType){
                     <Stack>{`Tech stack : ${props.cardStackDescription}`}</Stack>
                 </SideText>
                 <FlexWrapper justify={"space-between"} margin="0 0 25px 0">
+                <SideText>
                     <CardLink href="#"> <Icon iconId = {"link-chainIcon"} width={"20"} height={"20"} viewBox = {"0 0 20 20"}/>Live Preview</CardLink>
-                    <CardLink href="#"><Icon iconId = {"githubIcon"} width={"20"} height={"20"} viewBox = {"0 0 90 90"}/>View Code</CardLink>
+                </SideText>    
+                <SideText>    
+                   <CardLink href="#"><Icon iconId = {"githubIcon"} width={"20"} height={"20"} viewBox = {"0 0 90 90"}/>View Code</CardLink>
+                </SideText>
                 </FlexWrapper>
             </Description>
         </CardContainer>

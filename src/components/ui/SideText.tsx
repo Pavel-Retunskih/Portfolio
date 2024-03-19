@@ -1,7 +1,6 @@
 import {motion, useInView, useAnimation} from 'framer-motion'
 import styled from 'styled-components'
 import { useRef, useEffect } from 'react';
-import { once } from 'events';
 
 type SideTextPropsType = {
     children: JSX.Element
@@ -40,7 +39,7 @@ export const SideText = ({children}:SideTextPropsType)=>{
             }}
             initial = "hidden"
             animate = {slideControls}
-            transition={{duration: 0.5, ease:"easeOut"}}
+            transition={{delay: 0.15, duration: 0.5, ease:"easeOut"}}
             style = {{
                 position: "absolute",
                 top: 4,

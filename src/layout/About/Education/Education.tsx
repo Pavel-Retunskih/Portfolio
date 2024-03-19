@@ -2,6 +2,7 @@ import styled from "styled-components"
 import { FlexWrapper } from "../../../components/FlexWrapper/FlexWrapp"
 import { Theme } from "../../../styles/Theme"
 import { Icon } from "../../../components/Icon/Icon"
+import { SideText } from './../../../components/ui/SideText';
 
 type EducationPropsType = {
     title: string
@@ -15,17 +16,25 @@ export function Education(props : EducationPropsType){
     return(
         <EducationBox>
              <FlexWrapper justify={"space-between"}>
-                <Speciality>{props.title}</Speciality>
-                <span>{props.working}</span>
+                <SideText>
+                    <Speciality>{props.title}</Speciality>
+                </SideText>
+                <SideText>
+                    <span>{props.working}</span>
+                </SideText>
             </FlexWrapper>
             <FlexWrapper justify={"space-between"} wrap={"wrap"} margin = {"10px 0 0 0"}>
                 <FlexWrapper gap={"7px"} align={"baseline"}>
                     <Icon iconId={"office-building"} width={"9"} height={"9"} viewBox={"3 1 10 10"} />
-                    <University>{props.university}</University>
+                    <SideText>
+                        <University>{props.university}</University>
+                    </SideText>
                 </FlexWrapper>
                 <FlexWrapper gap={"7px"} align={"baseline"}>
                     <Icon iconId={"calendar"} width={"9"} height={"9"} viewBox={"1 0 13 13"} />
-                    <EducationPeriod>{props.period}</EducationPeriod>
+                    <SideText>
+                        <EducationPeriod>{props.period}</EducationPeriod>
+                    </SideText>
                 </FlexWrapper>
             </FlexWrapper>
         </EducationBox>
