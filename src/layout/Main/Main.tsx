@@ -92,8 +92,8 @@ const MainImageWrapper = styled.div`
             display: none;
         }
         @media ${Theme.media.other} {
-            height: 540px;
-            width: 540px;
+            height: 500px;
+            width: 500px;
         }
     }
 `
