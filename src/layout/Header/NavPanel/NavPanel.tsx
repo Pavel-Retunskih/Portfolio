@@ -1,26 +1,37 @@
 import styled from "styled-components";
 import { SocialPanel } from "../../../components/SocialPanel/SocialPanel";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import { Theme } from "../../../styles/Theme";
+import { HoverEffect } from "../../../components/ui/HoverEffect";
 
-export function NavPanel(){
+
+
+
+export type navButtonsPropsType = {
+    items: Array<ItemsType>
+}
+
+type ItemsType = {
+    link: string 
+    description: string
+}
+
+
+export function NavPanel(props:navButtonsPropsType){
     return(
         <NavigationPanel>
             <NavButtons>
-                <li><Link to="/Portfolio/">Home</Link></li>
-                <li><Link to="/Portfolio/about">About</Link></li>
-                <li><Link to="/Portfolio/skills">Tech Stack</Link></li>
-                <li><Link to="/Portfolio/projects">Projects</Link></li>
-                <li><Link to="/Portfolio/contacts">Contact</Link></li>
+                {props.items.map(({link,description})=> 
+                <li><HoverEffect><Link to = {link}>{description}</Link></HoverEffect></li>
+                )}
             </NavButtons>
-            <SocialPanel />
+            <SocialPanel/>
         </NavigationPanel>
     )
 }
 
 const NavigationPanel = styled.nav`
     display: flex;
-    flex-wrap: wrap;
     align-items: flex-start;
     gap: 60px;
     @media ${Theme.media.tablet}{
@@ -34,13 +45,12 @@ export const NavButtons = styled.ul`
     font-weight: 500;
     display: flex;
     gap: 60px;
+    li {
+        white-space: nowrap;
+    }
     @media ${Theme.media.tablet}{
         display: none;
     }
-    @media ${Theme.media.other}{
-        gap: 20px;
-    }
-    
 `
 // @keyframes glitch-1 {
 //     0% {

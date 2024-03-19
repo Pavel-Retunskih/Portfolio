@@ -3,9 +3,10 @@ import { Link } from "react-router-dom";
 import { Theme } from "../../../styles/Theme";
 import { Icon } from "../../../components/Icon/Icon";
 import { useState } from "react";
+import { navButtonsPropsType } from "../NavPanel/NavPanel";
 
 
-export function MobileNavigationMenu(){
+export function MobileNavigationMenu(props:navButtonsPropsType){
     const[open, setOpen] = useState(false)
     function handleChange(){
         setOpen(!open)
@@ -17,11 +18,9 @@ export function MobileNavigationMenu(){
             </BurgerButton>
             <MobileMenuPopup isOpen ={open}>
                 <ul>
-                    <li onClick={handleChange}><Link to="/Portfolio/">Home</Link></li>
-                    <li onClick={handleChange}><Link to="/Portfolio/about">About</Link></li>
-                    <li onClick={handleChange}><Link to="/Portfolio/skills">Tech Stack</Link></li>
-                    <li onClick={handleChange}><Link to="/Portfolio/projects">Projects</Link></li>
-                    <li onClick={handleChange}><Link to="/Portfolio/contacts">Contact</Link></li>
+                    {props.items.map(({link,description})=>
+                        <li onClick={handleChange}><Link to={link}>{description}</Link></li>
+                    )}
                     <ul>
                         <li><a href="#"><Icon height="30" width="30" viewBox="0 0 30 30" iconId = {'githubSocialIcon'}/></a></li>
                         <li><a href="#"><Icon height="30" width="30" viewBox="2 2 30 30" iconId = {'twitterSocialIcon'}/></a></li>
@@ -67,14 +66,9 @@ const BurgerButton = styled.button<{isOpen: boolean}>`
         position: absolute;
         bottom: 40px;
         left: 50px;
-        transition: all 0.1s ease-in-out;
         ${props => props.isOpen && css<{isOpen : boolean}>`
-           // background-color: rgba(255, 255, 255, 0);
-          // transform: translateY(0) rotate(90deg);
-          // left: 50%; /*Add this*/
-         // transform: translate(-50%, 0); /*Add this*/
-
-            width:0;
+           width: 0;
+           transition: 0.5;
         `}
         
         &::before{
