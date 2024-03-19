@@ -2,12 +2,15 @@ import styled from "styled-components";
 import { SocialPanel } from "../../../components/SocialPanel/SocialPanel";
 import { Link } from "react-router-dom";
 import { Theme } from "../../../styles/Theme";
+import { HoverEffect } from "../../../components/ui/HoverEffect";
+
+
 
 export function NavPanel(){
     return(
         <NavigationPanel>
             <NavButtons>
-                <li><Link to="/Portfolio/">Home</Link></li>
+            <HoverEffect><li><Link to="/Portfolio/">Home</Link></li></HoverEffect>
                 <li><Link to="/Portfolio/about">About</Link></li>
                 <li><Link to="/Portfolio/skills">Tech Stack</Link></li>
                 <li><Link to="/Portfolio/projects">Projects</Link></li>

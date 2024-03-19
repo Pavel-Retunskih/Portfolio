@@ -11,7 +11,7 @@ import imgCart4 from "../../assets/images/projectImg4.jpg"
 import imgCart5 from "../../assets/images/projectImg5.jpg"
 import imgCart6 from "../../assets/images/projectImg6.jpg"
 
-const ProjectCards = [
+const ProjectCardsData = [
     {src : imgCart1,
     title: 'Project Tile goes here',
     subtitle: 'This is sample project description random things are here in description This is sample project lorem ipsum generator for dummy content',
@@ -47,7 +47,7 @@ export function Projects(){
                         <SectionTitle>My Tech Stack</SectionTitle>
                         <SubTitle> Technologies I've been working with recently</SubTitle>
                     <FlexWrapper wrap={"wrap"} justify={"space-between"} align={"center"}>
-                        {ProjectCards.map(({src, title, subtitle, stack})=><Card 
+                        {ProjectCardsData.map(({src, title, subtitle, stack})=><Card 
                         src = {src} 
                         cardTitle={title} 
                         cardDescription= {subtitle} 

@@ -52,7 +52,7 @@ export function About(){
                             <Text>The Generator App is an online tool that helps you to export ready-made templates ready to work as your future website. It helps you to combine slides, panels and other components and export it as a set of static files: HTML/CSS/JS.</Text>
                         </SideText>
                         <SideText>
-                            <SectionTitle>Work Experience</SectionTitle>
+                            <Subtitle>Work Experience</Subtitle>
                         </SideText>
                         {experienceData.map(({position, workingHours, company, place, workPeriod})=> 
                         <WorkExperince 
@@ -63,7 +63,7 @@ export function About(){
                             period = {workPeriod}/>
                         )}
                         <SideText>
-                            <SectionTitle>Education</SectionTitle>
+                            <Subtitle>Education</Subtitle>
                         </SideText>
                         {educationData.map(({position, workingHours, university, workPeriod})=>
                         <Education 
@@ -92,7 +92,8 @@ const Text = styled.p`
 `
 
 const ImageBox = styled.div`
-    width: 1330px;
+    width: 100%;
+    max-width: 1330px;
     position: relative;
     @media ${Theme.media.mobile}{
         display: none;
@@ -101,4 +102,7 @@ const ImageBox = styled.div`
 const AboutImg = styled.img`
     position: absolute;
     top: -45px;
+`
+const Subtitle = styled(SectionTitle)`
+    margin-bottom: 30px;
 `
