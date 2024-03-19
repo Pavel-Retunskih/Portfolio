@@ -57,8 +57,8 @@ const MainImage = styled.img`
     }
     @media ${Theme.media.other}{
         margin-right: 0;
-        width: 348px;
-        height: 348px;
+        width: 325px;
+        height: 325px;
     }
 `
 const MainImageWrapper = styled.div`
@@ -72,14 +72,12 @@ const MainImageWrapper = styled.div`
         width: 300px;
         height: 300px;
         margin-top: 10px;
-        margin-right: 0;
     }
     @media ${Theme.media.tablet}{
         margin: 0 auto;
         margin-top: 100px;
     }
     @media ${Theme.media.other}{
-        margin-right: 0;
     }
 
     &::before{
@@ -91,9 +89,12 @@ const MainImageWrapper = styled.div`
         background-image: url(${abstract});
         background-size:cover;
         @media ${Theme.media.mobile} {
-        width: 350px;
-        height: 350px;
-    }
+            display: none;
+        }
+        @media ${Theme.media.other} {
+            height: 540px;
+            width: 540px;
+        }
     }
 `
 const TextSpan = styled.span`

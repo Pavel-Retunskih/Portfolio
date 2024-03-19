@@ -21,7 +21,7 @@ export function Footer(){
                     </FlexWrapper>
                 </ContactWrapper>
             </StyledFlexWrapper>
-            <FlexWrapper align={"center"} justify={"space-between"}>
+            <StyledNavFlexWrapper align={"center"} justify={"space-between"}>
                 <FlexWrapper align={"center"} justify={"space-between"}>
                         <NavButtons>
                             <li><Link to ="/Portfolio/">Home</Link></li>
@@ -32,7 +32,7 @@ export function Footer(){
                         </NavButtons>
                 </FlexWrapper>
                     <p>Designed and built by <GradientText size={"18px"}>Pavan MG</GradientText> with <GradientText size={"18px"}>Love</GradientText> & <GradientText size={"18px"}>Coffee</GradientText></p>
-            </FlexWrapper>
+            </StyledNavFlexWrapper>
         </FooterContainer>
     )
 }
@@ -71,5 +71,11 @@ const ContactWrapper = styled(FlexWrapper)`
         flex-direction: column;
         gap: 20px;
         justify-content: center;
+    }
+`
+const StyledNavFlexWrapper = styled(FlexWrapper)`
+    flex-direction: column;
+    p{
+        margin-top: 50px;
     }
 `
