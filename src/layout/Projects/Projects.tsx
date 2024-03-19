@@ -10,6 +10,7 @@ import imgCart3 from "../../assets/images/projectImg3.jpg"
 import imgCart4 from "../../assets/images/projectImg4.jpg"
 import imgCart5 from "../../assets/images/projectImg5.jpg"
 import imgCart6 from "../../assets/images/projectImg6.jpg"
+import { SideText } from "../../components/ui/SideText";
 
 const ProjectCardsData = [
     {src : imgCart1,
@@ -44,8 +45,8 @@ export function Projects(){
         <Section>
             <Container>
                 <FlexWrapper direction="column">
-                        <SectionTitle>My Tech Stack</SectionTitle>
-                        <SubTitle> Technologies I've been working with recently</SubTitle>
+                        <SideText><SectionTitle>My Projects</SectionTitle></SideText>
+                        <SideText><SubTitle> Technologies I've been working with recently</SubTitle></SideText>
                     <FlexWrapper wrap={"wrap"} justify={"space-between"} align={"center"}>
                         {ProjectCardsData.map(({src, title, subtitle, stack})=><Card 
                         src = {src} 
