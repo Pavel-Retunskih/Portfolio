@@ -12,9 +12,9 @@ import { SideText } from "../../components/ui/SideText";
 
 export function Main(){
     return(
-        <Section margintop="200px" overflow="visible">
+        <Section>
             <Container>
-                <FlexWrapper align={"center"} justify={"space-between"} wrap={"wrap"}>
+                <FlexWrapper style={{padding:"100px 0 150px 0"}} align={"center"} justify={"space-between"} wrap={"wrap"}>
                         <FlexWrapper align={"flex-start"} justify={"space-beetwen"} direction={"column"} >
                             <SideText>
                                 <TextSpan>Hi 👋,</TextSpan>
@@ -24,7 +24,7 @@ export function Main(){
                             </SideText>
                             <SideText>
                                 <TextSpan>
-                                    <GradientText font= {"Poppins"} weight={700} lineHeight={"70px"} fmin={36} fmax={58}>Pavan MG</GradientText>
+                                    <GradientText font= {"Poppins"} weight={700} lineHeight={"70px"} fmin={46} fmax={58}>Pavan MG</GradientText>
                                 </TextSpan>
                             </SideText>    
                             <SideText>
@@ -41,7 +41,7 @@ export function Main(){
 }
 
 const MainTitle = styled.h1`
-    ${font({family:"Poppins", weight:700, lineHeight: "70px", Fmax:58, Fmin:36})};
+    ${font({family:"Poppins", weight:700, lineHeight: "70px", Fmax:58, Fmin:46})};
     letter-spacing: -1px;
     padding-top: 20px;
     text-align: left;
@@ -72,6 +72,9 @@ const MainImageWrapper = styled.div`
     @media ${Theme.media.tablet}{
         margin: 0 auto;
         margin-top: 100px;
+    }
+    @media ${Theme.media.other}{
+        margin-right: 0;
     }
 
     &::before{
