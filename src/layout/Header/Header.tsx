@@ -29,4 +29,7 @@ const StyledHeader = styled.header`
         margin-top: 15px;
         margin-bottom: 50px;
     }
+    @media ${Theme.media.other}{
+        padding: 0 10px;
+    }
 `

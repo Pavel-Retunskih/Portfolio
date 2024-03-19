@@ -30,7 +30,7 @@ export const OpacityIn = ({children}:SideTextPropsType)=>{
             }}
             initial = "hidden"
             animate={mainControls}
-            transition={{duration: 0.7, ease:"easeIn"}}
+            transition={{duration: 0.7, delay: 0.4, ease:"easeIn"}}
             >{children}
             </motion.div>
         </Wrapp>

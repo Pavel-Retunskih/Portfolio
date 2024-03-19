@@ -10,6 +10,8 @@ export const Theme = {
     },
     media:{
         tablet:"screen and (max-width: 768px)",
+        other:"screen and (max-width: 896px)",
         mobile:"screen and (max-width: 576px)",
+        
     }
 }

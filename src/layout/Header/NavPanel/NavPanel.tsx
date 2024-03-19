@@ -37,6 +37,9 @@ export const NavButtons = styled.ul`
     @media ${Theme.media.tablet}{
         display: none;
     }
+    @media ${Theme.media.other}{
+        gap: 20px;
+    }
     
 `
 // @keyframes glitch-1 {
